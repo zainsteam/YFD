@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Friendly Developers
+  </title>
+  <link rel="icon" type="image/png" href="assets/images/WEBP/layer 2 2 (1).webp">
+  <link rel="shortcut icon" type="image/png" href="assets/images/WEBP/layer 2 2 (1).webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Impact&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @font-face {
+      font-family: 'Bebas Neue';
+      src: url('assets/fonts/BebasNeue-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Poppins';
+      src: url('assets/fonts/Poppins-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+  </style>
+  <link rel="stylesheet" href="assets/css/main.min.css" />
+  <script src="assets/js/main.js" defer>
+  </script>
+  <script>document.addEventListener('DOMContentLoaded', function () { console.log('Inline script loaded!'); const hamburger = document.querySelector('.hamburger-menu'); if (hamburger) { console.log('Hamburger found in inline script'); hamburger.addEventListener('click', function () { console.log('Hamburger clicked from inline script!'); this.classList.toggle('active'); const mobileNav = document.querySelector('.mobile-nav'); if (mobileNav) { mobileNav.classList.toggle('active'); console.log('Mobile nav toggled:', mobileNav.classList.contains('active')) } }) } else { console.log('Hamburger not found in inline script') } const mobileDropdownToggles = document.querySelectorAll('.mobile-nav .dropdown-toggle'); console.log('Mobile dropdown toggles found in inline script:', mobileDropdownToggles.length); mobileDropdownToggles.forEach((toggle) => { console.log('Adding click event to dropdown toggle in inline script:', toggle); toggle.removeEventListener('click', toggle._dropdownHandler); toggle._dropdownHandler = function (e) { e.preventDefault(); e.stopPropagation(); e.stopImmediatePropagation(); console.log('Dropdown toggle clicked in inline script!'); const dropdown = this.closest('.dropdown'); const isActive = dropdown.classList.contains('active'); console.log('Dropdown active state in inline script:', isActive); if (!isActive) { dropdown.classList.add('active'); console.log('Dropdown activated in inline script!') } else { dropdown.classList.remove('active'); console.log('Dropdown deactivated in inline script!') } }; toggle.addEventListener('click', toggle._dropdownHandler) }); document.addEventListener('click', function (e) { if (!e.target.closest('.mobile-nav .dropdown') && !e.target.closest('.mobile-nav .dropdown-toggle')) { document.querySelectorAll('.mobile-nav .dropdown').forEach((d) => { d.classList.remove('active') }) } }); const mobileNavLinks = document.querySelectorAll('.mobile-nav .nav-links a:not(.dropdown-toggle)'); mobileNavLinks.forEach((link) => { link.addEventListener('click', function () { console.log('Mobile nav link clicked,closing menu'); if (hamburger && mobileNav) { hamburger.classList.remove('active'); mobileNav.classList.remove('active') } }) }); const dropdowns = document.querySelectorAll('.mobile-nav .dropdown'); dropdowns.forEach((dropdown) => { dropdown.addEventListener('click', function (e) { e.stopPropagation(); console.log('Dropdown clicked,preventing mobile nav close') }) }) });
+  </script>
+</head>
+
+<body class="home-page">
+  <nav class="mobile-nav" id="mobile-nav">
+    <ul class="nav-links">
+      <li>
+        <a href="index.html" class="active">Home
+        </a>
+      </li>
+      <li>
+        <a href="pages/about.html">About
+        </a>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle">Services
+        </a>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="pages/services/seo.html">SEO
+            </a>
+          </li>
+          <li>
+            <a href="pages/services/branding.html">Branding
+            </a>
+          </li>
+          <li>
+            <a href="pages/services/smm.html">SMM
+            </a>
+          </li>
+          <li>
+            <a href="pages/services/website-development.html">Website Development
+            </a>
+          </li>
+          <li>
+            <a href="pages/services/website-maintenance.html">Website Maintenance
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="pages/pricing.html">Pricing
+        </a>
+      </li>
+      <li>
+        <a href="pages/contact.html">Contact
+        </a>
+      </li>
+    </ul>
+    <a href="/contact.html" class="get-started-btn mobile-btn">Get Started
+    </a>
+  </nav>
+  <header class="custom-header">
+    <div class="header-container">
+      <div class="logo">
+        <img src="assets/images/WEBP/group 163.webp" alt="Logo" / loading="lazy">
+      </div>
+      <div class="hamburger-menu" id="hamburger-menu">
+        <span>
+        </span>
+        <span>
+        </span>
+        <span>
+        </span>
+      </div>
+      <nav class="desktop-nav">
+        <ul class="nav-links">
+          <li>
+            <a href="index.html" class="active">Home
+            </a>
+          </li>
+          <li>
+            <a href="pages/about.html">About
+            </a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Services
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="pages/services/seo.html">SEO
+                </a>
+              </li>
+              <li>
+                <a href="pages/services/branding.html">Branding
+                </a>
+              </li>
+              <li>
+                <a href="pages/services/smm.html">SMM
+                </a>
+              </li>
+              <li>
+                <a href="pages/services/website-development.html">Website Development
+                </a>
+              </li>
+              <li>
+                <a href="pages/services/website-maintenance.html">Website Maintenance
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="pages/pricing.html">Pricing
+            </a>
+          </li>
+          <li>
+            <a href="pages/contact.html">Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <a href="/contact.html" class="get-started-btn desktop-btn">Get Started
+      </a>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="text">
+        <h1>
+          <span class="blue">Websites
+          </span>That Look Great, Feel Right, and
+          <span class="blue">Get Found
+          </span>
+        </h1>
+        <p>At Your Friendly Developers, we understand that every business is different. Our goal is to help you grow
+          online by offering solutions that fit your needs and deliver real results.
+        </p>
+        <div class="buttons">
+          <a href="pages/about.html" class="btn secondary">Learn More
+          </a>
+          <a href="pages/contact.html" class="btn primary">Get Started
+          </a>
+        </div>
+      </div>
+      <div class="mockup">
+        <div class="circle-bg">
+        </div>
+        <img src="assets/images/WEBP/group 213.webp" alt="Mockup" / loading="lazy">
+      </div>
+    </div>
+  </section>
+  <section class="why-choose">
+    <div class="container why-choose-content">
+      <div class="why-choose-graphic">
+        <img src="assets/images/WEBP/image 12.webp" alt="Why Choose Graphic" / loading="lazy">
+      </div>
+      <div class="why-choose-text">
+        <h2>Why Choose Your
+          <span class="blue">Friendly Developers
+          </span>?
+        </h2>
+        <div class="features-list">
+          <div class="feature-item">
+            <div class="feature-icon">★
+            </div>
+            <div class="feature-content">
+              <p>Innovative Branding Agency: We develop brands that connect with your target audience and convey your
+                narrative.
+              </p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">★
+            </div>
+            <div class="feature-content">
+              <p>Website Design & Development: We specialize in creating custom websites that offer a seamless and
+                visually engaging user experience, thoughtfully designed to reflect and enhance your brand identity.
+              </p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">★
+            </div>
+            <div class="feature-content">
+              <p>Cost-Effective SEO Services: We assist companies of all sizes in improving their Google rankings and
+                drawing in the right clientele.
+              </p>
+            </div>
+          </div>
+        </div>
+        <a href="pages/about.html" class="btn secondary">Read More
+        </a>
+      </div>
+    </div>
+    <div class="rectangle-bg-right">
+      <img src="assets/images/WEBP/rectangle 52.webp" alt="Rectangle Background" / loading="lazy">
+    </div>
+  </section>
+  <section class="expertise">
+    <img src="assets/images/WEBP/Layer 2 2.webp" alt="YFD Watermark" class="expertise-watermark" / loading="lazy">
+    <div class="container">
+      <div class="expertise-header">
+        <h2>Our
+          <span class="blue">Expertise
+          </span>
+        </h2>
+        <p>Your ideas combined with our skills create remarkable outcomes. We focus on providing:
+        </p>
+      </div>
+      <div class="expertise-grid">
+        <div class="expertise-card">
+          <div class="card-image">
+            <img src="assets/images/WEBP/Group 205.webp" alt="Website Development" / loading="lazy">
+          </div>
+          <h3>Website Development
+          </h3>
+          <p>We specialize in building responsive, user-friendly websites that are fast, secure, and designed to meet
+            your business goals.
+          </p>
+          <a href="pages/services/website-development.html" class="btn primary">Get Started
+          </a>
+        </div>
+        <div class="expertise-card">
+          <div class="card-image">
+            <img src="assets/images/WEBP/Group 201.webp" alt="Branding" / loading="lazy">
+          </div>
+          <h3>Branding
+          </h3>
+          <p>We help build memorable brand identities that resonate with your audience, creating a lasting impression
+            that sets you.
+          </p>
+          <a href="pages/services/branding.html" class="btn primary">Get Started
+          </a>
+        </div>
+        <div class="expertise-card">
+          <div class="card-image">
+            <img src="assets/images/WEBP/Group 204.webp" alt="SEO" / loading="lazy">
+          </div>
+          <h3>SEO
+          </h3>
+          <p>Increase your online visibility and drive organic traffic with our tailored SEO strategies designed to rank
+            your site higher on search engines.
+          </p>
+          <a href="pages/services/seo.html" class="btn primary">Get Started
+          </a>
+        </div>
+        <div class="expertise-card">
+          <div class="card-image">
+            <img src="assets/images/WEBP/Group 206.webp" alt="Social Media Marketing" / loading="lazy">
+          </div>
+          <h3>SMM
+          </h3>
+          <p>Boost your social media presence with targeted campaigns that engage your audience, drive traffic, and
+            enhance brand awareness.
+          </p>
+          <a href="pages/services/smm.html" class="btn primary">Get Started
+          </a>
+        </div>
+        <div class="expertise-card">
+          <div class="card-image">
+            <img src="assets/images/WEBP/Group 72.webp" alt="Website Maintenance" / loading="lazy">
+          </div>
+          <h3>Website Maintenance
+          </h3>
+          <p>Ensure your website is always upto-date and running smoothly with our ongoing maintenance and support
+            services.
+          </p>
+          <a href="pages/services/website-maintenance.html" class="btn primary">Get Started
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="rectangle-bg-left">
+      <img src="assets/images/WEBP/rectangle 52.webp" alt="Rectangle Background" / loading="lazy">
+    </div>
+  </section>
+  <section class="cta-section">
+    <div class="cta-dot top-left">
+    </div>
+    <div class="cta-dot bottom-right">
+    </div>
+    <div class="cta-content">
+      <h2>Let’s Shape the Future of
+        <br />Your Brand Together
+      </h2>
+      <p>Ready to elevate your business to new heights? At Your Friendly Developers, we offer tailored solutions that
+        perfectly align with your goals.
+      </p>
+      <a href="pages/contact.html" class="cta-btn">schedule a call now
+      </a>
+    </div>
+  </section>
+  <section class="why-choose">
+    <div class="container why-choose-content">
+      <div class="why-choose-graphic">
+        <img src="assets/images/WEBP/frame.webp" alt="Why Choose Graphic" / loading="lazy">
+      </div>
+      <div class="why-choose-text">
+        <h2>Helping Businesses
+          <span class="blue">Grow with
+          </span>Purpose
+          <span class="blue">and Results
+          </span>
+        </h2>
+        <div class="features-list">
+          <div class="feature-item">
+            <div class="feature-content">
+              <p>At Your Friendly Developers, we focus on delivering results that make a real difference. We help
+                businesses grow through smart and creative digital strategies. Our work is always tailored to each
+                client, making sure every solution supports both immediate success and lasting progress.
+              </p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-content">
+              <p>With every project, we focus on achieving excellence, whether it’s through customized web design, SEO
+                optimization, or branding. The results speak for themselves, and we’re proud to have helped numerous
+                businesses scale and thrive.
+              </p>
+            </div>
+          </div>
+        </div>
+        <a href="pages/contact.html" class="btn secondary">Contact Now
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="pricing-section">
+    <img src="assets/images/WEBP/Layer 2 2.webp" alt="YFD Watermark" class="pricing-watermark" / loading="lazy">
+    <div class="pricing-header">
+      <h2>Plans That
+        <span>Work for You
+        </span>
+      </h2>
+      <p>We offer flexible, competitive packages tailored to your needs. Whether you're an individual, startup, or small
+        business, we have the perfect solution for you.
+      </p>
+    </div>
+    <div class="pricing-cards">
+      <div class="pricing-card starter">
+        <img src="assets/images/WEBP/Layer 2 2.webp" alt="YFD Watermark" class="card-watermark" / loading="lazy">
+        <div class="badge">Starter Package
+        </div>
+        <h3>$399
+        </h3>
+        <p class="subtitle">Perfect for individuals and new startups.
+        </p>
+        <hr />
+        <ul>
+          <li>Up to 5 cleanly built pages
+          </li>
+          <li>Mobile-friendly and tablet-ready layout
+          </li>
+          <li>Simple contact form with email alerts
+          </li>
+          <li>Clickable social media icons included
+          </li>
+          <li>Google Maps showing your business location
+          </li>
+          <li>Matching colors, fonts, and branding
+          </li>
+          <li>Subtle effects for smoother experience
+          </li>
+        </ul>
+        <a href="pages/contact.html" class="get-started-btn">Get Started
+        </a>
+      </div>
+      <div class="pricing-card growth">
+        <img src="assets/images/WEBP/Layer 2 2.webp" alt="YFD Watermark" class="card-watermark" / loading="lazy">
+        <div class="badge">Growth Package
+        </div>
+        <h3>$799
+        </h3>
+        <p class="subtitle">Perfect for growing small-sized businesses.
+        </p>
+        <hr />
+        <ul>
+          <li>Up to 10 fully custom pages
+          </li>
+          <li>Personalized design with clean sections
+          </li>
+          <li>Blog setup with easy post system
+          </li>
+          <li>Contact form with uploads and choices
+          </li>
+          <li>Soft scroll effects and page motion
+          </li>
+          <li>Optimized pictures for faster loading speed
+          </li>
+          <li>Custom visuals that fit your style
+          </li>
+        </ul>
+        <a href="pages/contact.html" class="get-started-btn">Get Started
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="testimonial-contact-section">
+    <div class="testimonial-header">
+      <h2>
+        <span>Trusted
+        </span>By Businesses
+        <br>Like Yours
+      </h2>
+    </div>
+    <div class="testimonial-container">
+      <div class="testimonial-slide active">
+        <div class="testimonial">
+          <p>The team at YFD helped me create a website that perfectly represents my brand. Their work increased my
+            online visibility and has made my business stand out in the local market.
+          </p>
+          <div class="author">
+            <img src="assets/images/WEBP/Ellipse 3.webp" alt="Anne Howards" loading="lazy">
+            <div>
+              <strong>Anne Howards
+              </strong>
+              <br>Owner, Local Shop
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <p>I couldn't be happier with the results. The website they built for my store has not only improved the user
+            experience but also helped boost my sales significantly.
+          </p>
+          <div class="author">
+            <img src="assets/images/WEBP/Ellipse 3.webp" alt="Brianna J." loading="lazy">
+            <div>
+              <strong>Brianna J.
+              </strong>
+              <br>Owner, Online Store
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-slide">
+        <div class="testimonial">
+          <p>Outstanding service and exceptional results! YFD transformed our online presence completely. The website
+            they created is not only beautiful but also highly functional.
+          </p>
+          <div class="author">
+            <img src="assets/images/WEBP/Ellipse 3.webp" alt="Michael Chen" loading="lazy">
+            <div>
+              <strong>Michael Chen
+              </strong>
+              <br>CEO, Tech Startup
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <p>Professional team with amazing attention to detail. They delivered exactly what we envisioned and more.
+            Highly recommended for any business looking to grow online.
+          </p>
+          <div class="author">
+            <img src="assets/images/WEBP/Ellipse 3.webp" alt="Sarah Williams" loading="lazy">
+            <div>
+              <strong>Sarah Williams
+              </strong>
+              <br>Marketing Director
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="arrows">
+        <button class="arrow" onclick="prevSlide()">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6" />
+          </svg>
+        </button>
+        <button class="arrow" onclick="nextSlide()">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6" />
+          </svg>
+        </button>
+      </div>
+      <div class="vector-image">
+        <img src="assets/images/WEBP/vector.webp" alt="Vector Image" / loading="lazy">
+      </div>
+    </div>
+    <div class="contact-container">
+      <div class="contact-box">
+        <h2>Get in Touch
+        </h2>
+        <p>Ready to take your business to the next level? Let’s shape the future of your brand together.
+        </p>
+        <div class="contact-items">
+          <div class="item">
+            <div class="icon">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M3 5a2 2 0 0 1 2-2h3.28a1 1 0 0 1 .948.684l1.498 4.493a1 1 0 0 1-.502 1.21l-2.257 1.13a11.042 11.042 0 0 0 5.516 5.516l1.13-2.257a1 1 0 0 1 1.21-.502l4.493 1.498a1 1 0 0 1 .684.949V19a2 2 0 0 1-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+            </div>
+            <span>
+              <a href="tel:234-248-9493" style="color: black;text-decoration: none;">234-248-9493
+              </a>
+            </span>
+          </div>
+          <div class="item">
+            <div class="icon">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+              </svg>
+            </div>
+            <span>
+              <a href="mailto:info@yourfriendlydevelopers.com"
+                style="color: black;text-decoration: none;">info@yourfriendlydevelopers.com
+              </a>
+            </span>
+          </div>
+          <div class="item">
+            <div class="icon">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22 2l-7 20-4-9-9-4 20-7z" />
+              </svg>
+            </div>
+            <span>United States
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="footer-container">
+      <img src="assets/images/WEBP/group 214.webp" alt="YFD Logo" class="footer-logo" / loading="lazy">
+      <div class="footer-brand">
+        <p>At Your Friendly Developers, we understand that every business is different. Our goal is to help you grow
+          online by offering solutions that fit your needs and deliver real results.
+        </p>
+        <div class="social-icons">
+          <a href="https://facebook.com/yourfriendlydevelopers" target="_blank">
+            <img src="assets/images/icons/facebook.svg" alt="Facebook" / loading="lazy">
+          </a>
+          <a href="https://twitter.com/yourfriendlydev" target="_blank">
+            <img src="assets/images/icons/x.svg" alt="X" / loading="lazy">
+          </a>
+          <a href="https://instagram.com/yourfriendlydevelopers" target="_blank">
+            <img src="assets/images/icons/instagram.svg" alt="Instagram" / loading="lazy">
+          </a>
+          <a href="https://linkedin.com/company/yourfriendlydevelopers" target="_blank">
+            <img src="assets/images/icons/linkedin.svg" alt="LinkedIn" / loading="lazy">
+          </a>
+        </div>
+        <div class="newsletter">
+          <input type="email" placeholder="email321@gmail.com" />
+          <button>
+            <img src="assets/images/icons/send.svg" alt="Send" / loading="lazy">
+          </button>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="link-column">
+          <div class="title-pill">Quick Links
+          </div>
+          <ul>
+            <li>
+              <a href="index.html">Home
+              </a>
+            </li>
+            <li>
+              <a href="pages/about.html">About
+              </a>
+            </li>
+            <li>
+              <a href="pages/services/seo.html">Services
+              </a>
+            </li>
+            <li>
+              <a href="pages/pricing.html">Pricing
+              </a>
+            </li>
+            <li>
+              <a href="pages/contact.html">Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="link-column">
+          <div class="title-pill">Contact Information
+          </div>
+          <ul>
+            <li>
+              <a href="mailto:info@yourfriendlydevelopers.com">info@yourfriendlydevelopers.com
+              </a>
+            </li>
+            <li>
+              <a href="tel:234-248-9493">234-248-9493
+              </a>
+            </li>
+            <li>United States
+            </li>
+          </ul>
+        </div>
+        <div class="link-column">
+          <div class="title-pill">Policy Links
+          </div>
+          <ul>
+            <li>
+              <a href="pages/legal/privacy-policy.html">Privacy Policy
+              </a>
+            </li>
+            <li>
+              <a href="pages/legal/terms-and-conditions.html">Terms and Conditions
+              </a>
+            </li>
+            <li>
+              <a href="pages/legal/cookie-settings.html">Cookie Settings
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2025 flextbsllc.com | All rights reserved.
+    </div>
+    <img src="assets/images/WEBP/layer-2-3.webp" alt="YFD Watermark" class="footer-watermark" / loading="lazy">
+  </footer>
+  <script>document.addEventListener('DOMContentLoaded', function () { const hamburgerMenu = document.getElementById('hamburger-menu'); const mobileNav = document.getElementById('mobile-nav'); const header = document.querySelector('.custom-header'); hamburgerMenu.addEventListener('click', function () { hamburgerMenu.classList.toggle('active'); mobileNav.classList.toggle('active'); if (mobileNav.classList.contains('active')) { document.body.style.overflow = 'hidden' } else { document.body.style.overflow = 'auto' } }); const mobileLinks = mobileNav.querySelectorAll('a'); mobileLinks.forEach(link => { link.addEventListener('click', function () { hamburgerMenu.classList.remove('active'); mobileNav.classList.remove('active'); document.body.style.overflow = 'auto' }) }); window.addEventListener('scroll', function () { if (window.scrollY > 50) { header.classList.add('sticky') } else { header.classList.remove('sticky') } }); let currentSlide = 0; const testimonialSlides = document.querySelectorAll('.testimonial-slide'); function showSlide(index) { testimonialSlides.forEach((slide, i) => { slide.classList.remove('active'); if (i === index) { slide.classList.add('active') } }) } function nextSlide() { currentSlide = (currentSlide + 1) % testimonialSlides.length; showSlide(currentSlide) } function prevSlide() { currentSlide = (currentSlide - 1 + testimonialSlides.length) % testimonialSlides.length; showSlide(currentSlide) } window.nextSlide = nextSlide; window.prevSlide = prevSlide; showSlide(0); function showSlideWithFade(index) { const currentActiveSlide = document.querySelector('.testimonial-slide.active'); if (currentActiveSlide) { currentActiveSlide.style.opacity = '0'; setTimeout(() => { currentActiveSlide.classList.remove('active'); testimonialSlides[index].classList.add('active'); setTimeout(() => { testimonialSlides[index].style.opacity = '1' }, 50) }, 250) } else { testimonialSlides[index].classList.add('active') } } const originalShowSlide = showSlide; const originalNextSlide = nextSlide; const originalPrevSlide = prevSlide; showSlide = function (index) { currentSlide = index; showSlideWithFade(index) }; nextSlide = function () { currentSlide = (currentSlide + 1) % testimonialSlides.length; showSlideWithFade(currentSlide) }; prevSlide = function () { currentSlide = (currentSlide - 1 + testimonialSlides.length) % testimonialSlides.length; showSlideWithFade(currentSlide) }; window.nextSlide = nextSlide; window.prevSlide = prevSlide });
+  </script>
+</body>
+
+</html>
