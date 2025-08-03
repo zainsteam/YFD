@@ -2,31 +2,16 @@
 <html lang="en">
 
 <head>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Your Friendly Developers
   </title>
   <link rel="icon" type="image/png" href="assets/images/WEBP/layer 2 2 (1).webp">
   <link rel="shortcut icon" type="image/png" href="assets/images/WEBP/layer 2 2 (1).webp">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Impact&display=swap" rel="stylesheet">
+  <link rel="preload" href="assets/fonts/BebasNeue-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/fonts/Poppins-Regular.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    @font-face {
-      font-family: 'Bebas Neue';
-      src: url('assets/fonts/BebasNeue-Regular.ttf') format('truetype');
-      font-weight: normal;
-      font-style: normal;
-    }
-
-    @font-face {
-      font-family: 'Poppins';
-      src: url('assets/fonts/Poppins-Regular.ttf') format('truetype');
-      font-weight: normal;
-      font-style: normal;
-    }
-  </style>
   <link rel="stylesheet" href="assets/css/main.min.css" />
   <script src="assets/js/main.js" defer>
   </script>
@@ -80,13 +65,17 @@
         </a>
       </li>
     </ul>
-    <a href="/contact.html" class="get-started-btn mobile-btn">Get Started
+    <a href="pages/contact.html" class="get-started-btn mobile-btn">Get Started
     </a>
   </nav>
   <header class="custom-header">
+    <noscript>
+    </noscript>
     <div class="header-container">
       <div class="logo">
-        <img src="assets/images/WEBP/group 163.webp" alt="Logo" / loading="lazy">
+        <a href="index.html">
+          <img src="assets/images/WEBP/group 163.webp" alt="Logo" / loading="lazy">
+        </a>
       </div>
       <div class="hamburger-menu" id="hamburger-menu">
         <span>
@@ -142,7 +131,7 @@
           </li>
         </ul>
       </nav>
-      <a href="/contact.html" class="get-started-btn desktop-btn">Get Started
+      <a href="pages/contact.html" class="get-started-btn desktop-btn">Get Started
       </a>
     </div>
   </header>
@@ -484,12 +473,12 @@
         </div>
       </div>
       <div class="arrows">
-        <button class="arrow" onclick="prevSlide()">
+        <button class="arrow" onclick="prevSlide()" aria-label="Previous testimonial">
           <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M15 18l-6-6 6-6" />
           </svg>
         </button>
-        <button class="arrow" onclick="nextSlide()">
+        <button class="arrow" onclick="nextSlide()" aria-label="Next testimonial">
           <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M9 18l6-6-6-6" />
           </svg>
@@ -567,7 +556,7 @@
         </div>
         <div class="newsletter">
           <input type="email" placeholder="email321@gmail.com" />
-          <button>
+          <button aria-label="Subscribe to newsletter">
             <img src="assets/images/icons/send.svg" alt="Send" / loading="lazy">
           </button>
         </div>

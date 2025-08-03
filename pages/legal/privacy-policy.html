@@ -1,258 +1,278 @@
 <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Privacy Policy - Your Friendly Developers
-      </title>
-      <link rel="icon" type="image/png" href="../../assets/images/WEBP/layer 2 2 (1).webp">
-        <link rel="shortcut icon" type="image/png" href="../../assets/images/WEBP/layer 2 2 (1).webp">
-          <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-              <link href="https://fonts.googleapis.com/css2?family=Impact&display=swap" rel="stylesheet">
-                <style>@font-face { font-family: 'Bebas Neue'; src: url('../../assets/fonts/BebasNeue-Regular.ttf') format('truetype'); font-weight: normal; font-style: normal; } @font-face { font-family: 'Poppins'; src: url('../../assets/fonts/Poppins-Regular.ttf') format('truetype'); font-weight: normal; font-style: normal; }
-                </style>
-                <link rel="stylesheet" href="../../assets/css/main.min.css" />
-                <script src="../../assets/js/main.js" defer>
-                </script>
-                <script>document.addEventListener('DOMContentLoaded',function (){console.log('Inline script loaded!');const hamburger=document.querySelector('.hamburger-menu');if (hamburger){console.log('Hamburger found in inline script');hamburger.addEventListener('click',function (){console.log('Hamburger clicked from inline script!');this.classList.toggle('active');const mobileNav=document.querySelector('.mobile-nav');if (mobileNav){mobileNav.classList.toggle('active');console.log('Mobile nav toggled:',mobileNav.classList.contains('active'))}})}else{console.log('Hamburger not found in inline script')}const mobileDropdownToggles=document.querySelectorAll('.mobile-nav .dropdown-toggle');console.log('Mobile dropdown toggles found in inline script:',mobileDropdownToggles.length);mobileDropdownToggles.forEach((toggle)=>{console.log('Adding click event to dropdown toggle in inline script:',toggle);toggle.removeEventListener('click',toggle._dropdownHandler);toggle._dropdownHandler=function (e){e.preventDefault();e.stopPropagation();e.stopImmediatePropagation();console.log('Dropdown toggle clicked in inline script!');const dropdown=this.closest('.dropdown');const isActive=dropdown.classList.contains('active');console.log('Dropdown active state in inline script:',isActive);if (!isActive){dropdown.classList.add('active');console.log('Dropdown activated in inline script!')}else{dropdown.classList.remove('active');console.log('Dropdown deactivated in inline script!')}};toggle.addEventListener('click',toggle._dropdownHandler)});document.addEventListener('click',function (e){if (!e.target.closest('.mobile-nav .dropdown') && !e.target.closest('.mobile-nav .dropdown-toggle')){document.querySelectorAll('.mobile-nav .dropdown').forEach((d)=>{d.classList.remove('active')})}});const mobileNavLinks=document.querySelectorAll('.mobile-nav .nav-links a:not(.dropdown-toggle)');mobileNavLinks.forEach((link)=>{link.addEventListener('click',function (){console.log('Mobile nav link clicked,closing menu');if (hamburger && mobileNav){hamburger.classList.remove('active');mobileNav.classList.remove('active')}})});const dropdowns=document.querySelectorAll('.mobile-nav .dropdown');dropdowns.forEach((dropdown)=>{dropdown.addEventListener('click',function (e){e.stopPropagation();console.log('Dropdown clicked,preventing mobile nav close')})})});
-                </script>
-              </head>
-              <body>
-                <nav class="mobile-nav" id="mobile-nav">
-                  <ul class="nav-links">
-                    <li>
-                      <a href="../../index.html">Home
-                      </a>
-                    </li>
-                    <li>
-                      <a href="../about.html">About
-                      </a>
-                    </li>
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle">Services
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li>
-                          <a href="../services/seo.html">SEO
-                          </a>
-                        </li>
-                        <li>
-                          <a href="../services/branding.html">Branding
-                          </a>
-                        </li>
-                        <li>
-                          <a href="../services/smm.html">SMM
-                          </a>
-                        </li>
-                        <li>
-                          <a href="../services/website-development.html">Website Development
-                          </a>
-                        </li>
-                        <li>
-                          <a href="../services/website-maintenance.html">Website Maintenance
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="../pricing.html">Pricing
-                      </a>
-                    </li>
-                    <li>
-                      <a href="../contact.html">Contact
-                      </a>
-                    </li>
-                  </ul>
-                  <a href="#" class="get-started-btn mobile-btn">Get Started
-                  </a>
-                </nav>
-                <header class="custom-header">
-                  <div class="header-container">
-                    <div class="logo">
-                      <img src="../../assets/images/WEBP/group 163.webp" alt="Logo" / loading="lazy">
-                      </div>
-                      <div class="hamburger-menu" id="hamburger-menu">
-                        <span>
-                        </span>
-                        <span>
-                        </span>
-                        <span>
-                        </span>
-                      </div>
-                      <nav class="desktop-nav">
-                        <ul class="nav-links">
-                          <li>
-                            <a href="../../index.html">Home
-                            </a>
-                          </li>
-                          <li>
-                            <a href="../about.html">About
-                            </a>
-                          </li>
-                          <li class="dropdown">
-                            <a href="#" class="dropdown-toggle">Services
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li>
-                                <a href="../services/seo.html">SEO
-                                </a>
-                              </li>
-                              <li>
-                                <a href="../services/branding.html">Branding
-                                </a>
-                              </li>
-                              <li>
-                                <a href="../services/smm.html">SMM
-                                </a>
-                              </li>
-                              <li>
-                                <a href="../services/website-development.html">Website Development
-                                </a>
-                              </li>
-                              <li>
-                                <a href="../services/website-maintenance.html">Website Maintenance
-                                </a>
-                              </li>
-                            </ul>
-                          </li>
-                          <li>
-                            <a href="../pricing.html">Pricing
-                            </a>
-                          </li>
-                          <li>
-                            <a href="../contact.html">Contact
-                            </a>
-                          </li>
-                        </ul>
-                      </nav>
-                      <a href="#" class="get-started-btn desktop-btn">Get Started
-                      </a>
-                    </div>
-                  </header>
-                  <section class="about-section">
-                    <div class="about-content">
-                      <h2>Privacy Policy
-                      </h2>
-                      <p>Your privacy is important to us. This Privacy Policy explains how we collect, use, and protect your information.
-                      </p>
-                    </div>
-                  </section>
-                  <section class="seo-section">
-                    <div class="seo-container">
-                      <h2>Information We Collect
-                      </h2>
-                      <p class="description">We collect information you provide directly to us, such as when you contact us, sign up for our services, or fill out forms on our website. This may include your name, email address, phone number, and any other information you choose to provide.
-                      </p>
-                      <h2>How We Use Your Information
-                      </h2>
-                      <p class="description">We use the information we collect to provide, maintain, and improve our services, communicate with you, and develop new features. We may also use your information to send you marketing communications, but you can opt out at any time.
-                      </p>
-                      <h2>Information Sharing
-                      </h2>
-                      <p class="description">We do not sell, trade, or otherwise transfer your personal information to third parties without your consent, except as described in this policy. We may share your information with trusted third parties who assist us in operating our website and providing services.
-                      </p>
-                      <h2>Data Security
-                      </h2>
-                      <p class="description">We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the internet is 100% secure.
-                      </p>
-                      <h2>Cookies and Tracking
-                      </h2>
-                      <p class="description">We use cookies and similar tracking technologies to enhance your experience on our website. You can control cookie settings through your browser preferences.
-                      </p>
-                      <h2>Your Rights
-                      </h2>
-                      <p class="description">You have the right to access, update, or delete your personal information. You can also opt out of marketing communications at any time by contacting us.
-                      </p>
-                      <h2>Changes to This Policy
-                      </h2>
-                      <p class="description">We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page and updating the "Last Updated" date.
-                      </p>
-                      <h2>Contact Us
-                      </h2>
-                      <p class="description">If you have any questions about this Privacy Policy, please contact us at info@yourfriendlydevelopers.com or call us at 234-248-9493.
-                      </p>
-                    </div>
-                  </section>
-                  <footer class="site-footer">
-                    <div class="footer-container">
-                      <img src="../../assets/images/WEBP/group 214.webp" alt="YFD Logo" class="footer-logo" / loading="lazy">
-                        <div class="footer-brand">
-                          <p>At Your Friendly Developers, we understand that every business is different. Our goal is to help you grow online by offering solutions that fit your needs and deliver real results.
-                          </p>
-                          <div class="social-icons">
-                            <a href="#">
-                              <img src="../../assets/images/icons/facebook.svg" alt="Facebook" / loading="lazy">
-                              </a>
-                              <a href="#">
-                                <img src="../../assets/images/icons/x.svg" alt="X" / loading="lazy">
-                                </a>
-                                <a href="#">
-                                  <img src="../../assets/images/icons/instagram.svg" alt="Instagram" / loading="lazy">
-                                  </a>
-                                  <a href="#">
-                                    <img src="../../assets/images/icons/linkedin.svg" alt="LinkedIn" / loading="lazy">
-                                    </a>
-                                  </div>
-                                  <div class="newsletter">
-                                    <input type="email" placeholder="email321@gmail.com" />
-                                    <button>
-                                      <img src="../../assets/images/icons/send.svg" alt="Send" / loading="lazy">
-                                      </button>
-                                    </div>
-                                  </div>
-                                  <div class="footer-links">
-                                    <div class="link-column">
-                                      <div class="title-pill">Quick Links
-                                      </div>
-                                      <ul>
-                                        <li>Home
-                                        </li>
-                                        <li>About
-                                        </li>
-                                        <li>Services
-                                        </li>
-                                        <li>Pricing
-                                        </li>
-                                        <li>Contact
-                                        </li>
-                                      </ul>
-                                    </div>
-                                    <div class="link-column">
-                                      <div class="title-pill">Contact Information
-                                      </div>
-                                      <ul>
-                                        <li>
-                                          <a href="mailto:info@yourfriendlydevelopers.com">info@yourfriendlydevelopers.com
-                                          </a>
-                                        </li>
-                                        <li>
-                                          <a href="tel:234-248-9493">234-248-9493
-                                          </a>
-                                        </li>
-                                        <li>United States
-                                        </li>
-                                      </ul>
-                                    </div>
-                                    <div class="link-column">
-                                      <div class="title-pill">Policy Links
-                                      </div>
-                                      <ul>
-                                        <li>Privacy Policy
-                                        </li>
-                                        <li>Terms and Conditions
-                                        </li>
-                                        <li>Cookie Settings
-                                        </li>
-                                      </ul>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="footer-bottom">© 2025 flextbsllc.com | All rights reserved.
-                                </div>
-                                <img src="../../assets/images/WEBP/layer-2-3.webp" alt="YFD Watermark" class="footer-watermark" / loading="lazy">
-                                </footer>
-                                <script>document.addEventListener('DOMContentLoaded',function (){const hamburgerMenu=document.getElementById('hamburger-menu');const mobileNav=document.getElementById('mobile-nav');const header=document.querySelector('.custom-header');hamburgerMenu.addEventListener('click',function (){hamburgerMenu.classList.toggle('active');mobileNav.classList.toggle('active');if (mobileNav.classList.contains('active')){document.body.style.overflow='hidden'}else{document.body.style.overflow='auto'}});const mobileLinks=mobileNav.querySelectorAll('a');mobileLinks.forEach(link=>{link.addEventListener('click',function (){hamburgerMenu.classList.remove('active');mobileNav.classList.remove('active');document.body.style.overflow='auto'})});window.addEventListener('scroll',function (){if (window.scrollY>50){header.classList.add('sticky')}else{header.classList.remove('sticky')}});const mobileDropdowns=document.querySelectorAll('.mobile-nav .dropdown');mobileDropdowns.forEach(dropdown=>{const toggle=dropdown.querySelector('.dropdown-toggle');toggle.addEventListener('click',function (e){e.preventDefault();dropdown.classList.toggle('active')})});document.addEventListener('click',function (e){if (!e.target.closest('.dropdown')){mobileDropdowns.forEach(dropdown=>{dropdown.classList.remove('active')})}})});
-                                </script>
-                              </body>
-                            </html>
+<html lang="en">
+
+<head>
+  <noscript>
+  </noscript>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - Your Friendly Developers
+  </title>
+  <link rel="icon" type="image/png" href="../../assets/images/WEBP/layer 2 2 (1).webp">
+  <link rel="shortcut icon" type="image/png" href="../../assets/images/WEBP/layer 2 2 (1).webp">
+  <link rel="preload" href="../../assets/fonts/BebasNeue-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="../../assets/fonts/Poppins-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="../../assets/css/main.min.css" />
+  <script src="../../assets/js/main.js" defer>
+  </script>
+  <script>document.addEventListener('DOMContentLoaded', function () { console.log('Inline script loaded!'); const hamburger = document.querySelector('.hamburger-menu'); if (hamburger) { console.log('Hamburger found in inline script'); hamburger.addEventListener('click', function () { console.log('Hamburger clicked from inline script!'); this.classList.toggle('active'); const mobileNav = document.querySelector('.mobile-nav'); if (mobileNav) { mobileNav.classList.toggle('active'); console.log('Mobile nav toggled:', mobileNav.classList.contains('active')) } }) } else { console.log('Hamburger not found in inline script') } const mobileDropdownToggles = document.querySelectorAll('.mobile-nav .dropdown-toggle'); console.log('Mobile dropdown toggles found in inline script:', mobileDropdownToggles.length); mobileDropdownToggles.forEach((toggle) => { console.log('Adding click event to dropdown toggle in inline script:', toggle); toggle.removeEventListener('click', toggle._dropdownHandler); toggle._dropdownHandler = function (e) { e.preventDefault(); e.stopPropagation(); e.stopImmediatePropagation(); console.log('Dropdown toggle clicked in inline script!'); const dropdown = this.closest('.dropdown'); const isActive = dropdown.classList.contains('active'); console.log('Dropdown active state in inline script:', isActive); if (!isActive) { dropdown.classList.add('active'); console.log('Dropdown activated in inline script!') } else { dropdown.classList.remove('active'); console.log('Dropdown deactivated in inline script!') } }; toggle.addEventListener('click', toggle._dropdownHandler) }); document.addEventListener('click', function (e) { if (!e.target.closest('.mobile-nav .dropdown') && !e.target.closest('.mobile-nav .dropdown-toggle')) { document.querySelectorAll('.mobile-nav .dropdown').forEach((d) => { d.classList.remove('active') }) } }); const mobileNavLinks = document.querySelectorAll('.mobile-nav .nav-links a:not(.dropdown-toggle)'); mobileNavLinks.forEach((link) => { link.addEventListener('click', function () { console.log('Mobile nav link clicked,closing menu'); if (hamburger && mobileNav) { hamburger.classList.remove('active'); mobileNav.classList.remove('active') } }) }); const dropdowns = document.querySelectorAll('.mobile-nav .dropdown'); dropdowns.forEach((dropdown) => { dropdown.addEventListener('click', function (e) { e.stopPropagation(); console.log('Dropdown clicked,preventing mobile nav close') }) }) });
+  </script>
+</head>
+
+<body>
+  <nav class="mobile-nav" id="mobile-nav">
+    <ul class="nav-links">
+      <li>
+        <a href="../../index.html">Home
+        </a>
+      </li>
+      <li>
+        <a href="../about.html">About
+        </a>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle">Services
+        </a>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="../services/seo.html">SEO
+            </a>
+          </li>
+          <li>
+            <a href="../services/branding.html">Branding
+            </a>
+          </li>
+          <li>
+            <a href="../services/smm.html">SMM
+            </a>
+          </li>
+          <li>
+            <a href="../services/website-development.html">Website Development
+            </a>
+          </li>
+          <li>
+            <a href="../services/website-maintenance.html">Website Maintenance
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="../pricing.html">Pricing
+        </a>
+      </li>
+      <li>
+        <a href="../contact.html">Contact
+        </a>
+      </li>
+    </ul>
+    <a href="../../pages/contact.html" class="get-started-btn mobile-btn">Get Started
+    </a>
+  </nav>
+  <header class="custom-header">
+    <noscript>
+    </noscript>
+    <div class="header-container">
+      <div class="logo">
+        <a href="../../index.html">
+          <img src="../../assets/images/WEBP/group 163.webp" alt="Logo" / loading="lazy">
+        </a>
+      </div>
+      <div class="hamburger-menu" id="hamburger-menu">
+        <span>
+        </span>
+        <span>
+        </span>
+        <span>
+        </span>
+      </div>
+      <nav class="desktop-nav">
+        <ul class="nav-links">
+          <li>
+            <a href="../../index.html">Home
+            </a>
+          </li>
+          <li>
+            <a href="../about.html">About
+            </a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Services
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="../services/seo.html">SEO
+                </a>
+              </li>
+              <li>
+                <a href="../services/branding.html">Branding
+                </a>
+              </li>
+              <li>
+                <a href="../services/smm.html">SMM
+                </a>
+              </li>
+              <li>
+                <a href="../services/website-development.html">Website Development
+                </a>
+              </li>
+              <li>
+                <a href="../services/website-maintenance.html">Website Maintenance
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="../pricing.html">Pricing
+            </a>
+          </li>
+          <li>
+            <a href="../contact.html">Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <a href="../../pages/contact.html" class="get-started-btn desktop-btn">Get Started
+      </a>
+    </div>
+  </header>
+  <section class="about-section">
+    <div class="about-content">
+      <h2>Privacy Policy
+      </h2>
+      <p>Your privacy is important to us. This Privacy Policy explains how we collect, use, and protect your
+        information.
+      </p>
+    </div>
+  </section>
+  <section class="seo-section">
+    <div class="seo-container">
+      <h2>Information We Collect
+      </h2>
+      <p class="description">We collect information you provide directly to us, such as when you contact us, sign up for
+        our services, or fill out forms on our website. This may include your name, email address, phone number, and any
+        other information you choose to provide.
+      </p>
+      <h2>How We Use Your Information
+      </h2>
+      <p class="description">We use the information we collect to provide, maintain, and improve our services,
+        communicate with you, and develop new features. We may also use your information to send you marketing
+        communications, but you can opt out at any time.
+      </p>
+      <h2>Information Sharing
+      </h2>
+      <p class="description">We do not sell, trade, or otherwise transfer your personal information to third parties
+        without your consent, except as described in this policy. We may share your information with trusted third
+        parties who assist us in operating our website and providing services.
+      </p>
+      <h2>Data Security
+      </h2>
+      <p class="description">We implement appropriate security measures to protect your personal information against
+        unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the
+        internet is 100% secure.
+      </p>
+      <h2>Cookies and Tracking
+      </h2>
+      <p class="description">We use cookies and similar tracking technologies to enhance your experience on our website.
+        You can control cookie settings through your browser preferences.
+      </p>
+      <h2>Your Rights
+      </h2>
+      <p class="description">You have the right to access, update, or delete your personal information. You can also opt
+        out of marketing communications at any time by contacting us.
+      </p>
+      <h2>Changes to This Policy
+      </h2>
+      <p class="description">We may update this Privacy Policy from time to time. We will notify you of any changes by
+        posting the new policy on this page and updating the "Last Updated" date.
+      </p>
+      <h2>Contact Us
+      </h2>
+      <p class="description">If you have any questions about this Privacy Policy, please contact us at
+        info@yourfriendlydevelopers.com or call us at 234-248-9493.
+      </p>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="footer-container">
+      <img src="../../assets/images/WEBP/group 214.webp" alt="YFD Logo" class="footer-logo" / loading="lazy">
+      <div class="footer-brand">
+        <p>At Your Friendly Developers, we understand that every business is different. Our goal is to help you grow
+          online by offering solutions that fit your needs and deliver real results.
+        </p>
+        <div class="social-icons">
+          <a href="#">
+            <img src="../../assets/images/icons/facebook.svg" alt="Facebook" / loading="lazy">
+          </a>
+          <a href="#">
+            <img src="../../assets/images/icons/x.svg" alt="X" / loading="lazy">
+          </a>
+          <a href="#">
+            <img src="../../assets/images/icons/instagram.svg" alt="Instagram" / loading="lazy">
+          </a>
+          <a href="#">
+            <img src="../../assets/images/icons/linkedin.svg" alt="LinkedIn" / loading="lazy">
+          </a>
+        </div>
+        <div class="newsletter">
+          <input type="email" placeholder="email321@gmail.com" />
+          <button aria-label="Subscribe to newsletter">
+            <img src="../../assets/images/icons/send.svg" alt="Send" / loading="lazy">
+          </button>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="link-column">
+          <div class="title-pill">Quick Links
+          </div>
+          <ul>
+            <li>Home
+            </li>
+            <li>About
+            </li>
+            <li>Services
+            </li>
+            <li>Pricing
+            </li>
+            <li>Contact
+            </li>
+          </ul>
+        </div>
+        <div class="link-column">
+          <div class="title-pill">Contact Information
+          </div>
+          <ul>
+            <li>
+              <a href="mailto:info@yourfriendlydevelopers.com">info@yourfriendlydevelopers.com
+              </a>
+            </li>
+            <li>
+              <a href="tel:234-248-9493">234-248-9493
+              </a>
+            </li>
+            <li>United States
+            </li>
+          </ul>
+        </div>
+        <div class="link-column">
+          <div class="title-pill">Policy Links
+          </div>
+          <ul>
+            <li>Privacy Policy
+            </li>
+            <li>Terms and Conditions
+            </li>
+            <li>Cookie Settings
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2025 flextbsllc.com | All rights reserved.
+    </div>
+    <img src="../../assets/images/WEBP/layer-2-3.webp" alt="YFD Watermark" class="footer-watermark" / loading="lazy">
+  </footer>
+  <script>document.addEventListener('DOMContentLoaded', function () { const hamburgerMenu = document.getElementById('hamburger-menu'); const mobileNav = document.getElementById('mobile-nav'); const header = document.querySelector('.custom-header'); hamburgerMenu.addEventListener('click', function () { hamburgerMenu.classList.toggle('active'); mobileNav.classList.toggle('active'); if (mobileNav.classList.contains('active')) { document.body.style.overflow = 'hidden' } else { document.body.style.overflow = 'auto' } }); const mobileLinks = mobileNav.querySelectorAll('a'); mobileLinks.forEach(link => { link.addEventListener('click', function () { hamburgerMenu.classList.remove('active'); mobileNav.classList.remove('active'); document.body.style.overflow = 'auto' }) }); window.addEventListener('scroll', function () { if (window.scrollY > 50) { header.classList.add('sticky') } else { header.classList.remove('sticky') } }); const mobileDropdowns = document.querySelectorAll('.mobile-nav .dropdown'); mobileDropdowns.forEach(dropdown => { const toggle = dropdown.querySelector('.dropdown-toggle'); toggle.addEventListener('click', function (e) { e.preventDefault(); dropdown.classList.toggle('active') }) }); document.addEventListener('click', function (e) { if (!e.target.closest('.dropdown')) { mobileDropdowns.forEach(dropdown => { dropdown.classList.remove('active') }) } }) });
+  </script>
+</body>
+
+</html>

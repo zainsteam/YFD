@@ -1,7 +1,67 @@
+/* Font Face Declarations */
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../assets/fonts/BebasNeue-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* Prevent font loading shifts */
+html {
+  font-size: 16px;
+}
+
+/* Ensure consistent font rendering during loading */
+.desktop-nav .nav-links a,
+.desktop-nav .dropdown-menu a,
+.mobile-nav .nav-links a,
+.mobile-nav .dropdown-menu a {
+  /* Prevent font loading shifts */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Force consistent rendering */
+  font-display: block;
 }
 
 /* Single Animation for Review Slide */
@@ -44,11 +104,15 @@
 }
 
 body {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: Impact, Arial, sans-serif;
   font-size: 16px;
   background: #fffee9;
   color: #222;
   position: relative;
+  /* Prevent layout shifts during font loading */
+  font-display: swap;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
@@ -200,9 +264,13 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.5rem;
+  font-family: "Bebas Neue", "Arial", sans-serif;
   transition: color 0.3s ease;
   padding: 0px 0;
   margin: 0;
+  font-display: swap;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .mobile-nav .get-started-btn {
@@ -215,10 +283,11 @@ body {
   margin-top: 10px;
 }
 
-.mobile-nav .nav-links a.active,
-.mobile-nav .nav-links a:hover {
+.mobile-nav .nav-links a.active {
   color: #000;
 }
+
+/* Removed hover effect for mobile nav links to prevent conflicts */
 
 /* Mobile Dropdown Styles */
 .mobile-nav .dropdown {
@@ -237,7 +306,11 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.5rem;
+  font-family: "Bebas Neue", "Arial", sans-serif;
   transition: color 0.3s ease;
+  font-display: swap;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .mobile-nav .dropdown-toggle:hover {
@@ -289,20 +362,18 @@ body {
 
 .mobile-nav .dropdown-menu a {
   padding: 12px 20px;
-  font-size: 1.3rem;
+  font-size: 16px;
   color: #000;
   border-radius: 0;
   text-transform: none;
   display: block;
   text-decoration: none;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: normal;
   transition: all 0.3s ease;
 }
 
-.mobile-nav .dropdown-menu a:hover {
-  background: transparent;
-  color: #000;
-  padding-left: 25px;
-}
+/* Removed hover effect for mobile dropdown menu */
 
 .mobile-btn {
   display: none;
@@ -317,6 +388,7 @@ body {
   list-style: none;
   display: flex;
   gap: clamp(1.25rem, 2.6vw, 2.25rem);
+  align-items: center;
 }
 
 .desktop-nav .nav-links a {
@@ -324,13 +396,19 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  line-height: 1.2;
+  font-display: swap;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.desktop-nav .nav-links a.active,
-.desktop-nav .nav-links a:hover {
+.desktop-nav .nav-links a.active {
   color: #00c3ff;
 }
+
+/* Removed hover effect for desktop nav links to prevent conflicts */
 
 /* Dropdown Styles */
 .dropdown {
@@ -360,7 +438,7 @@ body {
   background: rgba(1, 140, 194, 0.8);
   border-radius: 10px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-  min-width: 200px;
+  width: max-content;
   opacity: 0;
   visibility: hidden;
   transform: translateY(-10px);
@@ -382,23 +460,21 @@ body {
   padding: 0;
 }
 
-.dropdown-menu a {
+.desktop-nav .dropdown-menu a {
   display: block;
   padding: 12px 20px;
   color: white;
   text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Poppins", "Arial", sans-serif;
+  line-height: 1.4;
   transition: all 0.3s ease;
   border-radius: 0;
   text-transform: none;
 }
 
-.dropdown-menu a:hover {
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
-  padding-left: 25px;
-}
+/* Removed hover effect for desktop dropdown menu */
 
 .desktop-btn {
   display: block;
@@ -449,7 +525,7 @@ body:not(.home-page) .get-started-btn {
   line-height: 1.1;
   margin-bottom: 20px;
   font-weight: 900;
-  font-family: Impact, sans-serif;
+  font-family: Impact, Arial, sans-serif;
 }
 
 .text .blue {
@@ -480,6 +556,14 @@ body:not(.home-page) .get-started-btn {
   min-width: max-content;
   text-align: center;
   transition: 0.3s ease;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.btn:focus {
+  outline: 2px solid #0096dc;
+  outline-offset: 2px;
 }
 
 .btn.primary {
@@ -535,7 +619,7 @@ body:not(.home-page) .get-started-btn {
 }
 
 .why-choose-text h2 {
-  font-family: "Impact", sans-serif;
+  font-family: Impact, Arial, sans-serif;
   font-size: 49px;
   margin-bottom: 30px;
   line-height: 1.1;
@@ -588,7 +672,7 @@ body:not(.home-page) .get-started-btn {
 }
 
 .feature-content h3 {
-  font-family: "Impact", sans-serif;
+  font-family: Impact, Arial, sans-serif;
   font-size: 1.3rem;
   margin-bottom: 8px;
   color: #333;
@@ -799,7 +883,7 @@ body:not(.home-page) .get-started-btn {
 }
 
 .expertise-header h2 {
-  font-family: "Impact", sans-serif;
+  font-family: Impact, Arial, sans-serif;
   font-size: 49px;
   margin-bottom: 20px;
   line-height: 1.1;
@@ -880,7 +964,7 @@ body:not(.home-page) .get-started-btn {
 }
 
 .expertise-card h3 {
-  font-family: "Impact", sans-serif;
+  font-family: Impact, Arial, sans-serif;
   font-size: 25px;
   margin-bottom: 15px;
   color: white;
@@ -1017,6 +1101,11 @@ body:not(.home-page) .get-started-btn {
   transform: translateY(-50%) scale(1.05);
 }
 
+.newsletter button:focus {
+  outline: 2px solid #0096dc;
+  outline-offset: 2px;
+}
+
 .newsletter img {
   width: 20px;
   height: 20px;
@@ -1119,7 +1208,6 @@ body:not(.home-page) .get-started-btn {
 .cta-section {
   background: linear-gradient(to top, #0092ca, #053766);
   padding: 80px 0;
-  margin: 80px 0;
   position: relative;
   overflow: hidden;
   text-align: center;
@@ -1196,7 +1284,7 @@ body:not(.home-page) .get-started-btn {
 }
 
 .cta-content h2 {
-  font-family: "Impact", sans-serif;
+  font-family: Impact, Arial, sans-serif;
   font-size: 49px;
   color: white;
   margin-bottom: 20px;
@@ -1339,7 +1427,7 @@ body:not(.home-page) .get-started-btn {
 }
 
 .pricing-header h2 {
-  font-family: "Impact", sans-serif;
+  font-family: Impact, Arial, sans-serif;
   font-size: 49px;
   font-weight: 900;
   margin-bottom: 10px;
@@ -1497,7 +1585,7 @@ body:not(.home-page) .get-started-btn {
   margin-bottom: 60px;
   position: relative;
   z-index: 4;
-  font-family: "Impact", sans-serif;
+  font-family: Impact, Arial, sans-serif;
 }
 
 .testimonial-header h2 span {
@@ -1630,6 +1718,11 @@ body:not(.home-page) .get-started-btn {
   box-shadow: 0 4px 12px rgba(0, 150, 220, 0.3);
 }
 
+.arrow:focus {
+  outline: 2px solid #0096dc;
+  outline-offset: 2px;
+}
+
 .arrow:active {
   transform: scale(0.95);
 }
@@ -1654,7 +1747,7 @@ body:not(.home-page) .get-started-btn {
   font-weight: bold;
   margin-bottom: 15px;
   text-align: center;
-  font-family: "Impact", sans-serif;
+  font-family: Impact, Arial, sans-serif;
 }
 
 .contact-box p {
@@ -2466,7 +2559,7 @@ body:not(.home-page) .get-started-btn {
 }
 
 .expertise-card h3 {
-  font-family: "Impact", sans-serif;
+  font-family: Impact, Arial, sans-serif;
   font-size: 25px;
   margin-bottom: 15px;
   color: white;
@@ -2495,10 +2588,11 @@ body.about-page .about-section {
 }
 
 .about-content h2 {
+  font-family: Impact, Arial, sans-serif !important;
   font-size: 61px;
   font-weight: 900;
   margin-bottom: 20px;
-  font-family: "Impact", sans-serif;
+  font-family: Impact, Arial, sans-serif;
 }
 
 .about-content p {
@@ -2557,7 +2651,7 @@ body.about-page .about-section {
   font-size: 49px;
   font-weight: 800;
   color: #1f1f1f;
-  font-family: "Impact", sans-serif;
+  font-family: Impact, Arial, sans-serif;
 }
 
 .section-title span {
@@ -2614,7 +2708,7 @@ body.about-page .about-section {
 }
 
 .need-item h3 {
-  font-family: "Impact", sans-serif;
+  font-family: Impact, Arial, sans-serif;
   font-size: 1.3rem;
   font-weight: 700;
   margin-bottom: 10px;
@@ -2661,7 +2755,7 @@ body.about-page .about-section {
 }
 
 .grow-card h2 {
-  font-family: "Impact", sans-serif;
+  font-family: Impact, Arial, sans-serif;
   font-size: 49px;
   font-weight: 800;
   color: white;
@@ -2972,11 +3066,11 @@ body.contact-page .about-section {
 }
 
 .seo-container h2 {
+  font-family: Impact, Arial, sans-serif !important;
   font-size: 49px;
   font-weight: 800;
   margin-bottom: 20px;
   line-height: 1.1;
-  font-family: "Impact", sans-serif;
 }
 
 .seo-container .blue-text {
@@ -3051,7 +3145,7 @@ body.contact-page .about-section {
   font-weight: 800;
   color: #1f1f1f;
   margin-bottom: 30px;
-  font-family: "Impact", sans-serif;
+  font-family: Impact, Arial, sans-serif !important;
   line-height: 1.2;
 }
 
@@ -3147,7 +3241,7 @@ body.contact-page .about-section {
   margin-bottom: 25px;
   font-size: 49px;
   font-weight: 800;
-  font-family: "Impact", sans-serif;
+  font-family: Impact, Arial, sans-serif;
 }
 
 /* .cta-btn {
@@ -3337,7 +3431,7 @@ body.contact-page .about-section {
 }
 
 .price {
-  font-family: "Impact", sans-serif;
+  font-family: Impact, Arial, sans-serif;
   font-size: 61px;
   font-weight: bold;
   margin-bottom: 1rem;
@@ -3423,7 +3517,7 @@ body.contact-page .about-section {
   color: #333;
   margin-bottom: 20px;
   line-height: 1.2;
-  font-family: "Impact", sans-serif;
+  font-family: Impact, Arial, sans-serif;
 }
 
 .contact-form-left h2 .blue {
@@ -3435,6 +3529,7 @@ body.contact-page .about-section {
   color: #666;
   margin-bottom: 40px;
   line-height: 1.6;
+  font-family: "Poppins", sans-serif;
 }
 
 .contact-form {
@@ -3503,6 +3598,11 @@ body.contact-page .about-section {
 .submit-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(0, 150, 220, 0.3);
+}
+
+.submit-btn:focus {
+  outline: 2px solid #0096dc;
+  outline-offset: 2px;
 }
 
 .submit-btn svg {
@@ -3598,4 +3698,13 @@ body.contact-page .about-section {
     width: 350px;
     height: 350px;
   }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Impact, Arial, sans-serif;
 }

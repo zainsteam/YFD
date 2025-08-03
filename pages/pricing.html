@@ -1,335 +1,361 @@
 <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Pricing - Your Friendly Developers
-      </title>
-      <link rel="icon" type="image/png" href="../assets/images/WEBP/layer 2 2 (1).webp">
-        <link rel="shortcut icon" type="image/png" href="../assets/images/WEBP/layer 2 2 (1).webp">
-          <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-              <link href="https://fonts.googleapis.com/css2?family=Impact&display=swap" rel="stylesheet">
-                <style>@font-face { font-family: 'Bebas Neue'; src: url('../assets/fonts/BebasNeue-Regular.ttf') format('truetype'); font-weight: normal; font-style: normal; } @font-face { font-family: 'Poppins'; src: url('../assets/fonts/Poppins-Regular.ttf') format('truetype'); font-weight: normal; font-style: normal; }
-                </style>
-                <link rel="stylesheet" href="../assets/css/main.min.css" />
-                <script src="../assets/js/main.js" defer>
-                </script>
-                <script>document.addEventListener('DOMContentLoaded',function (){console.log('Inline script loaded!');const hamburger=document.querySelector('.hamburger-menu');if (hamburger){console.log('Hamburger found in inline script');hamburger.addEventListener('click',function (){console.log('Hamburger clicked from inline script!');this.classList.toggle('active');const mobileNav=document.querySelector('.mobile-nav');if (mobileNav){mobileNav.classList.toggle('active');console.log('Mobile nav toggled:',mobileNav.classList.contains('active'))}})}else{console.log('Hamburger not found in inline script')}const mobileDropdownToggles=document.querySelectorAll('.mobile-nav .dropdown-toggle');console.log('Mobile dropdown toggles found in inline script:',mobileDropdownToggles.length);mobileDropdownToggles.forEach((toggle)=>{console.log('Adding click event to dropdown toggle in inline script:',toggle);toggle.removeEventListener('click',toggle._dropdownHandler);toggle._dropdownHandler=function (e){e.preventDefault();e.stopPropagation();e.stopImmediatePropagation();console.log('Dropdown toggle clicked in inline script!');const dropdown=this.closest('.dropdown');const isActive=dropdown.classList.contains('active');console.log('Dropdown active state in inline script:',isActive);if (!isActive){dropdown.classList.add('active');console.log('Dropdown activated in inline script!')}else{dropdown.classList.remove('active');console.log('Dropdown deactivated in inline script!')}};toggle.addEventListener('click',toggle._dropdownHandler)});document.addEventListener('click',function (e){if (!e.target.closest('.mobile-nav .dropdown') && !e.target.closest('.mobile-nav .dropdown-toggle')){document.querySelectorAll('.mobile-nav .dropdown').forEach((d)=>{d.classList.remove('active')})}});const mobileNavLinks=document.querySelectorAll('.mobile-nav .nav-links a:not(.dropdown-toggle)');mobileNavLinks.forEach((link)=>{link.addEventListener('click',function (){console.log('Mobile nav link clicked,closing menu');if (hamburger && mobileNav){hamburger.classList.remove('active');mobileNav.classList.remove('active')}})});const dropdowns=document.querySelectorAll('.mobile-nav .dropdown');dropdowns.forEach((dropdown)=>{dropdown.addEventListener('click',function (e){e.stopPropagation();console.log('Dropdown clicked,preventing mobile nav close')})})});
-                </script>
-              </head>
-              <body class="pricing-page">
-                <nav class="mobile-nav" id="mobile-nav">
-                  <ul class="nav-links">
-                    <li>
-                      <a href="../index.html">Home
-                      </a>
-                    </li>
-                    <li>
-                      <a href="about.html">About
-                      </a>
-                    </li>
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle">Services
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li>
-                          <a href="services/seo.html">SEO
-                          </a>
-                        </li>
-                        <li>
-                          <a href="services/branding.html">Branding
-                          </a>
-                        </li>
-                        <li>
-                          <a href="services/smm.html">SMM
-                          </a>
-                        </li>
-                        <li>
-                          <a href="services/website-development.html">Website Development
-                          </a>
-                        </li>
-                        <li>
-                          <a href="services/website-maintenance.html">Website Maintenance
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="pricing.html" class="active">Pricing
-                      </a>
-                    </li>
-                    <li>
-                      <a href="contact.html">Contact
-                      </a>
-                    </li>
-                  </ul>
-                  <a href="contact.html" class="get-started-btn mobile-btn">Get Started
-                  </a>
-                </nav>
-                <header class="custom-header">
-                  <div class="header-container">
-                    <div class="logo">
-                      <img src="../assets/images/WEBP/group 163.webp" alt="Logo" / loading="lazy">
-                      </div>
-                      <div class="hamburger-menu" id="hamburger-menu">
-                        <span>
-                        </span>
-                        <span>
-                        </span>
-                        <span>
-                        </span>
-                      </div>
-                      <nav class="desktop-nav">
-                        <ul class="nav-links">
-                          <li>
-                            <a href="../index.html">Home
-                            </a>
-                          </li>
-                          <li>
-                            <a href="about.html">About
-                            </a>
-                          </li>
-                          <li class="dropdown">
-                            <a href="#" class="dropdown-toggle">Services
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li>
-                                <a href="services/seo.html">SEO
-                                </a>
-                              </li>
-                              <li>
-                                <a href="services/branding.html">Branding
-                                </a>
-                              </li>
-                              <li>
-                                <a href="services/smm.html">SMM
-                                </a>
-                              </li>
-                              <li>
-                                <a href="services/website-development.html">Website Development
-                                </a>
-                              </li>
-                              <li>
-                                <a href="services/website-maintenance.html">Website Maintenance
-                                </a>
-                              </li>
-                            </ul>
-                          </li>
-                          <li>
-                            <a href="pricing.html" class="active">Pricing
-                            </a>
-                          </li>
-                          <li>
-                            <a href="contact.html">Contact
-                            </a>
-                          </li>
-                        </ul>
-                      </nav>
-                      <a href="contact.html" class="get-started-btn desktop-btn">Get Started
-                      </a>
-                    </div>
-                  </header>
-                  <section class="about-section">
-                    <div class="about-content">
-                      <h2>Simple Pricing
-                      </h2>
-                      <p>We are a team that builds websites, helps you show up on Google, and grows your brand through social media. Everything we do is shaped around your goals.
-                      </p>
-                    </div>
-                  </section>
-                  <section class="pricing-section">
-                    <div class="seo-container" style="margin-bottom: 4rem;">
-                      <h2>
-                        <span class="blue-text">Premium Services
-                        </span>at Fair Prices
-                      </h2>
-                      <p class="subheading">Smart solutions for every stage of your business.
-                      </p>
-                    </div>
-                    <div class="pricing-container">
-                      <div class="card">
-                        <div class="icon" style="margin-bottom: 1rem;background: white !important;color: #029ee4 !important;">
-                          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M20 12V22H4V12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M2 7H22V12H2V7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M12 22V12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M12 7H7.5C6.83696 7 6.20107 6.73661 5.73223 6.26777C5.26339 5.79893 5 5.16304 5 4.5C5 3.83696 5.26339 3.20107 5.73223 2.73223C6.20107 2.26339 6.83696 2 7.5 2C11 2 12 7 12 7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M12 7H16.5C17.163 7 17.7989 6.73661 18.2678 6.26777C18.7366 5.79893 19 5.16304 19 4.5C19 3.83696 18.7366 3.20107 18.2678 2.73223C17.7989 2.26339 17.163 2 16.5 2C13 2 12 7 12 7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                          </svg>
-                        </div>
-                        <div class="title">Starter Package
-                        </div>
-                        <div class="price">$399
-                        </div>
-                        <div class="tagline">Perfect for individuals and new startups
-                        </div>
-                        <div class="features">Up to 5 cleanly built pages
-                          <br />Mobile-friendly and tablet-ready layout
-                            <br />Simple contact form with email alerts
-                              <br />Clickable social media icons included
-                                <br />Google Maps showing your business location
-                                  <br />Matching colors, fonts, and branding
-                                    <br />Subtle effects for smoother experience
-                                    </div>
-                                    <a href="contact.html" class="btn">Get Started
-                                    </a>
-                                  </div>
-                                  <div class="card featured">
-                                    <div class="icon" style="margin-bottom: 1rem;background: white !important;color: #029ee4 !important;">
-                                      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M20 12V22H4V12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M2 7H22V12H2V7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M12 22V12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M12 7H7.5C6.83696 7 6.20107 6.73661 5.73223 6.26777C5.26339 5.79893 5 5.16304 5 4.5C5 3.83696 5.26339 3.20107 5.73223 2.73223C6.20107 2.26339 6.83696 2 7.5 2C11 2 12 7 12 7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M12 7H16.5C17.163 7 17.7989 6.73661 18.2678 6.26777C18.7366 5.79893 19 5.16304 19 4.5C19 3.83696 18.7366 3.20107 18.2678 2.73223C17.7989 2.26339 17.163 2 16.5 2C13 2 12 7 12 7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                      </svg>
-                                    </div>
-                                    <div class="title">Pro Package
-                                    </div>
-                                    <div class="price">$799
-                                    </div>
-                                    <div class="tagline">Perfect for growing small-sized businesses
-                                    </div>
-                                    <div class="features">Up to 10 fully custom pages
-                                      <br />Personalized design with clean sections
-                                        <br />Blog setup with easy post system
-                                          <br />Contact form with uploads and choices
-                                            <br />Soft scroll effects and page motion
-                                              <br />Optimized pictures for faster loading speed
-                                                <br />Custom visuals that fit your style
-                                                </div>
-                                                <a href="contact.html" class="btn">Get Started
-                                                </a>
-                                              </div>
-                                              <div class="card">
-                                                <div class="icon" style="margin-bottom: 1rem;background: white !important;color: #029ee4 !important;">
-                                                  <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M20 12V22H4V12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path d="M2 7H22V12H2V7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path d="M12 22V12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path d="M12 7H7.5C6.83696 7 6.20107 6.73661 5.73223 6.26777C5.26339 5.79893 5 5.16304 5 4.5C5 3.83696 5.26339 3.20107 5.73223 2.73223C6.20107 2.26339 6.83696 2 7.5 2C11 2 12 7 12 7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path d="M12 7H16.5C17.163 7 17.7989 6.73661 18.2678 6.26777C18.7366 5.79893 19 5.16304 19 4.5C19 3.83696 18.7366 3.20107 18.2678 2.73223C17.7989 2.26339 17.163 2 16.5 2C13 2 12 7 12 7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                                  </svg>
-                                                </div>
-                                                <div class="title">Growth Package
-                                                </div>
-                                                <div class="price">$1,499
-                                                </div>
-                                                <div class="tagline">Perfect for established brands and services
-                                                </div>
-                                                <div class="features">Up to 20 professionally styled pages
-                                                  <br />High-level design with modern layout
-                                                    <br />Email signup or newsletter form setup
-                                                      <br />Chat box and popup features included
-                                                        <br />Booking or request form integration
-                                                          <br />Image and video display gallery
-                                                            <br />Easy-to-use menu with dropdowns
-                                                            </div>
-                                                            <a href="contact.html" class="btn">Get Started
-                                                            </a>
-                                                          </div>
-                                                        </div>
-                                                      </section>
-                                                      <section class="cta-mouse-section">
-                                                        <div class="cta-container">
-                                                          <div class="cta-box">
-                                                            <h2>Stand Out Online With A
-                                                              <br />Website That Performs.
-                                                              </h2>
-                                                              <a href="#" class="cta-btn">Get Started
-                                                              </a>
-                                                            </div>
-                                                            <div class="mouse-container">
-                                                              <img src="../assets/images/Group 215.svg" alt="Mouse with Wire" class="mouse-wire-svg" loading="lazy">
-                                                              </div>
-                                                            </div>
-                                                          </section>
-                                                          <footer class="site-footer">
-                                                            <div class="footer-container">
-                                                              <img src="../assets/images/WEBP/group 214.webp" alt="YFD Logo" class="footer-logo" / loading="lazy">
-                                                                <div class="footer-brand">
-                                                                  <p>At Your Friendly Developers, we understand that every business is different. Our goal is to help you grow online by offering solutions that fit your needs and deliver real results.
-                                                                  </p>
-                                                                  <div class="social-icons">
-                                                                    <a href="#">
-                                                                      <img src="../assets/images/icons/facebook.svg" alt="Facebook" / loading="lazy">
-                                                                      </a>
-                                                                      <a href="#">
-                                                                        <img src="../assets/images/icons/x.svg" alt="X" / loading="lazy">
-                                                                        </a>
-                                                                        <a href="#">
-                                                                          <img src="../assets/images/icons/instagram.svg" alt="Instagram" / loading="lazy">
-                                                                          </a>
-                                                                          <a href="#">
-                                                                            <img src="../assets/images/icons/linkedin.svg" alt="LinkedIn" / loading="lazy">
-                                                                            </a>
-                                                                          </div>
-                                                                          <div class="newsletter">
-                                                                            <input type="email" placeholder="email321@gmail.com" />
-                                                                            <button>
-                                                                              <img src="../assets/images/icons/send.svg" alt="Send" / loading="lazy">
-                                                                              </button>
-                                                                            </div>
-                                                                          </div>
-                                                                          <div class="footer-links">
-                                                                            <div class="link-column">
-                                                                              <div class="title-pill">Quick Links
-                                                                              </div>
-                                                                              <ul>
-                                                                                <li>Home
-                                                                                </li>
-                                                                                <li>About
-                                                                                </li>
-                                                                                <li>Services
-                                                                                </li>
-                                                                                <li>Pricing
-                                                                                </li>
-                                                                                <li>Contact
-                                                                                </li>
-                                                                              </ul>
-                                                                            </div>
-                                                                            <div class="link-column">
-                                                                              <div class="title-pill">Contact Information
-                                                                              </div>
-                                                                              <ul>
-                                                                                <li>
-                                                                                  <a href="mailto:info@yourfriendlydevelopers.com">info@yourfriendlydevelopers.com
-                                                                                  </a>
-                                                                                </li>
-                                                                                <li>
-                                                                                  <a href="tel:234-248-9493">234-248-9493
-                                                                                  </a>
-                                                                                </li>
-                                                                                <li>United States
-                                                                                </li>
-                                                                              </ul>
-                                                                            </div>
-                                                                            <div class="link-column">
-                                                                              <div class="title-pill">Policy Links
-                                                                              </div>
-                                                                              <ul>
-                                                                                <li>
-                                                                                  <a href="legal/privacy-policy.html">Privacy Policy
-                                                                                  </a>
-                                                                                </li>
-                                                                                <li>
-                                                                                  <a href="legal/terms-and-conditions.html">Terms and Conditions
-                                                                                  </a>
-                                                                                </li>
-                                                                                <li>
-                                                                                  <a href="legal/cookie-settings.html">Cookie Settings
-                                                                                  </a>
-                                                                                </li>
-                                                                              </ul>
-                                                                            </div>
-                                                                          </div>
-                                                                        </div>
-                                                                        <div class="footer-bottom">© 2025 flextbsllc.com | All rights reserved.
-                                                                        </div>
-                                                                        <img src="../assets/images/WEBP/layer-2-3.webp" alt="YFD Watermark" class="footer-watermark" / loading="lazy">
-                                                                        </footer>
-                                                                        <script>document.addEventListener('DOMContentLoaded',function (){const hamburgerMenu=document.getElementById('hamburger-menu');const mobileNav=document.getElementById('mobile-nav');const header=document.querySelector('.custom-header');hamburgerMenu.addEventListener('click',function (){hamburgerMenu.classList.toggle('active');mobileNav.classList.toggle('active');if (mobileNav.classList.contains('active')){document.body.style.overflow='hidden'}else{document.body.style.overflow='auto'}});const mobileLinks=mobileNav.querySelectorAll('a');mobileLinks.forEach(link=>{link.addEventListener('click',function (){hamburgerMenu.classList.remove('active');mobileNav.classList.remove('active');document.body.style.overflow='auto'})});window.addEventListener('scroll',function (){if (window.scrollY>50){header.classList.add('sticky')}else{header.classList.remove('sticky')}});const mobileDropdowns=document.querySelectorAll('.mobile-nav .dropdown');mobileDropdowns.forEach(dropdown=>{const toggle=dropdown.querySelector('.dropdown-toggle');toggle.addEventListener('click',function (e){e.preventDefault();dropdown.classList.toggle('active')})});document.addEventListener('click',function (e){if (!e.target.closest('.dropdown')){mobileDropdowns.forEach(dropdown=>{dropdown.classList.remove('active')})}})});
-                                                                        </script>
-                                                                      </body>
-                                                                    </html>
+<html lang="en">
+
+<head>
+  <noscript>
+  </noscript>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing - Your Friendly Developers
+  </title>
+  <link rel="icon" type="image/png" href="../assets/images/WEBP/layer 2 2 (1).webp">
+  <link rel="shortcut icon" type="image/png" href="../assets/images/WEBP/layer 2 2 (1).webp">
+  <link rel="preload" href="../assets/fonts/BebasNeue-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="../assets/fonts/Poppins-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="../assets/css/main.min.css" />
+  <script src="../assets/js/main.js" defer>
+  </script>
+  <script>document.addEventListener('DOMContentLoaded', function () { console.log('Inline script loaded!'); const hamburger = document.querySelector('.hamburger-menu'); if (hamburger) { console.log('Hamburger found in inline script'); hamburger.addEventListener('click', function () { console.log('Hamburger clicked from inline script!'); this.classList.toggle('active'); const mobileNav = document.querySelector('.mobile-nav'); if (mobileNav) { mobileNav.classList.toggle('active'); console.log('Mobile nav toggled:', mobileNav.classList.contains('active')) } }) } else { console.log('Hamburger not found in inline script') } const mobileDropdownToggles = document.querySelectorAll('.mobile-nav .dropdown-toggle'); console.log('Mobile dropdown toggles found in inline script:', mobileDropdownToggles.length); mobileDropdownToggles.forEach((toggle) => { console.log('Adding click event to dropdown toggle in inline script:', toggle); toggle.removeEventListener('click', toggle._dropdownHandler); toggle._dropdownHandler = function (e) { e.preventDefault(); e.stopPropagation(); e.stopImmediatePropagation(); console.log('Dropdown toggle clicked in inline script!'); const dropdown = this.closest('.dropdown'); const isActive = dropdown.classList.contains('active'); console.log('Dropdown active state in inline script:', isActive); if (!isActive) { dropdown.classList.add('active'); console.log('Dropdown activated in inline script!') } else { dropdown.classList.remove('active'); console.log('Dropdown deactivated in inline script!') } }; toggle.addEventListener('click', toggle._dropdownHandler) }); document.addEventListener('click', function (e) { if (!e.target.closest('.mobile-nav .dropdown') && !e.target.closest('.mobile-nav .dropdown-toggle')) { document.querySelectorAll('.mobile-nav .dropdown').forEach((d) => { d.classList.remove('active') }) } }); const mobileNavLinks = document.querySelectorAll('.mobile-nav .nav-links a:not(.dropdown-toggle)'); mobileNavLinks.forEach((link) => { link.addEventListener('click', function () { console.log('Mobile nav link clicked,closing menu'); if (hamburger && mobileNav) { hamburger.classList.remove('active'); mobileNav.classList.remove('active') } }) }); const dropdowns = document.querySelectorAll('.mobile-nav .dropdown'); dropdowns.forEach((dropdown) => { dropdown.addEventListener('click', function (e) { e.stopPropagation(); console.log('Dropdown clicked,preventing mobile nav close') }) }) });
+  </script>
+</head>
+
+<body class="pricing-page">
+  <nav class="mobile-nav" id="mobile-nav">
+    <ul class="nav-links">
+      <li>
+        <a href="../index.html">Home
+        </a>
+      </li>
+      <li>
+        <a href="about.html">About
+        </a>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle">Services
+        </a>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="services/seo.html">SEO
+            </a>
+          </li>
+          <li>
+            <a href="services/branding.html">Branding
+            </a>
+          </li>
+          <li>
+            <a href="services/smm.html">SMM
+            </a>
+          </li>
+          <li>
+            <a href="services/website-development.html">Website Development
+            </a>
+          </li>
+          <li>
+            <a href="services/website-maintenance.html">Website Maintenance
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="pricing.html" class="active">Pricing
+        </a>
+      </li>
+      <li>
+        <a href="contact.html">Contact
+        </a>
+      </li>
+    </ul>
+    <a href="contact.html" class="get-started-btn mobile-btn">Get Started
+    </a>
+  </nav>
+  <header class="custom-header">
+    <noscript>
+    </noscript>
+    <div class="header-container">
+      <div class="logo">
+        <a href="../index.html">
+          <img src="../assets/images/WEBP/group 163.webp" alt="Logo" / loading="lazy">
+        </a>
+      </div>
+      <div class="hamburger-menu" id="hamburger-menu">
+        <span>
+        </span>
+        <span>
+        </span>
+        <span>
+        </span>
+      </div>
+      <nav class="desktop-nav">
+        <ul class="nav-links">
+          <li>
+            <a href="../index.html">Home
+            </a>
+          </li>
+          <li>
+            <a href="about.html">About
+            </a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Services
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="services/seo.html">SEO
+                </a>
+              </li>
+              <li>
+                <a href="services/branding.html">Branding
+                </a>
+              </li>
+              <li>
+                <a href="services/smm.html">SMM
+                </a>
+              </li>
+              <li>
+                <a href="services/website-development.html">Website Development
+                </a>
+              </li>
+              <li>
+                <a href="services/website-maintenance.html">Website Maintenance
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="pricing.html" class="active">Pricing
+            </a>
+          </li>
+          <li>
+            <a href="contact.html">Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <a href="contact.html" class="get-started-btn desktop-btn">Get Started
+      </a>
+    </div>
+  </header>
+  <section class="about-section">
+    <div class="about-content">
+      <h2>Pricing
+      </h2>
+      <p>We are a team that builds websites, helps you show up on Google, and grows your brand through social media.
+        Everything we do is shaped around your goals.
+      </p>
+    </div>
+  </section>
+  <section class="pricing-section">
+    <div class="seo-container" style="margin-bottom: 4rem;">
+      <h2>
+        <span class="blue-text">Premium Services
+        </span>at Fair Prices
+      </h2>
+      <p class="subheading">Smart solutions for every stage of your business.
+      </p>
+    </div>
+    <div class="pricing-container">
+      <div class="card">
+        <div class="icon" style="margin-bottom: 1rem;background: white !important;color: #029ee4 !important;">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 12V22H4V12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M2 7H22V12H2V7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M12 22V12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M12 7H7.5C6.83696 7 6.20107 6.73661 5.73223 6.26777C5.26339 5.79893 5 5.16304 5 4.5C5 3.83696 5.26339 3.20107 5.73223 2.73223C6.20107 2.26339 6.83696 2 7.5 2C11 2 12 7 12 7Z"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M12 7H16.5C17.163 7 17.7989 6.73661 18.2678 6.26777C18.7366 5.79893 19 5.16304 19 4.5C19 3.83696 18.7366 3.20107 18.2678 2.73223C17.7989 2.26339 17.163 2 16.5 2C13 2 12 7 12 7Z"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div class="title">Starter Package
+        </div>
+        <div class="price">$399
+        </div>
+        <div class="tagline">Perfect for individuals and new startups
+        </div>
+        <div class="features">Up to 5 cleanly built pages
+          <br />Mobile-friendly and tablet-ready layout
+          <br />Simple contact form with email alerts
+          <br />Clickable social media icons included
+          <br />Google Maps showing your business location
+          <br />Matching colors, fonts, and branding
+          <br />Subtle effects for smoother experience
+        </div>
+        <a href="contact.html" class="btn">Get Started
+        </a>
+      </div>
+      <div class="card featured">
+        <div class="icon" style="margin-bottom: 1rem;background: white !important;color: #029ee4 !important;">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 12V22H4V12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M2 7H22V12H2V7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M12 22V12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M12 7H7.5C6.83696 7 6.20107 6.73661 5.73223 6.26777C5.26339 5.79893 5 5.16304 5 4.5C5 3.83696 5.26339 3.20107 5.73223 2.73223C6.20107 2.26339 6.83696 2 7.5 2C11 2 12 7 12 7Z"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M12 7H16.5C17.163 7 17.7989 6.73661 18.2678 6.26777C18.7366 5.79893 19 5.16304 19 4.5C19 3.83696 18.7366 3.20107 18.2678 2.73223C17.7989 2.26339 17.163 2 16.5 2C13 2 12 7 12 7Z"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div class="title">Pro Package
+        </div>
+        <div class="price">$799
+        </div>
+        <div class="tagline">Perfect for growing small-sized businesses
+        </div>
+        <div class="features">Up to 10 fully custom pages
+          <br />Personalized design with clean sections
+          <br />Blog setup with easy post system
+          <br />Contact form with uploads and choices
+          <br />Soft scroll effects and page motion
+          <br />Optimized pictures for faster loading speed
+          <br />Custom visuals that fit your style
+        </div>
+        <a href="contact.html" class="btn">Get Started
+        </a>
+      </div>
+      <div class="card">
+        <div class="icon" style="margin-bottom: 1rem;background: white !important;color: #029ee4 !important;">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 12V22H4V12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M2 7H22V12H2V7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M12 22V12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M12 7H7.5C6.83696 7 6.20107 6.73661 5.73223 6.26777C5.26339 5.79893 5 5.16304 5 4.5C5 3.83696 5.26339 3.20107 5.73223 2.73223C6.20107 2.26339 6.83696 2 7.5 2C11 2 12 7 12 7Z"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M12 7H16.5C17.163 7 17.7989 6.73661 18.2678 6.26777C18.7366 5.79893 19 5.16304 19 4.5C19 3.83696 18.7366 3.20107 18.2678 2.73223C17.7989 2.26339 17.163 2 16.5 2C13 2 12 7 12 7Z"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div class="title">Growth Package
+        </div>
+        <div class="price">$1,499
+        </div>
+        <div class="tagline">Perfect for established brands and services
+        </div>
+        <div class="features">Up to 20 professionally styled pages
+          <br />High-level design with modern layout
+          <br />Email signup or newsletter form setup
+          <br />Chat box and popup features included
+          <br />Booking or request form integration
+          <br />Image and video display gallery
+          <br />Easy-to-use menu with dropdowns
+        </div>
+        <a href="contact.html" class="btn">Get Started
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="cta-mouse-section">
+    <div class="cta-container">
+      <div class="cta-box">
+        <h2>Stand Out Online With A
+          <br />Website That Performs.
+        </h2>
+        <a href="contact.html" class="cta-btn-mouse">Get Started
+        </a>
+      </div>
+      <div class="mouse-container">
+        <img src="../assets/images/Group 215.svg" alt="Mouse with Wire" class="mouse-wire-svg" loading="lazy">
+      </div>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="footer-container">
+      <img src="../assets/images/WEBP/group 214.webp" alt="YFD Logo" class="footer-logo" / loading="lazy">
+      <div class="footer-brand">
+        <p>At Your Friendly Developers, we understand that every business is different. Our goal is to help you grow
+          online by offering solutions that fit your needs and deliver real results.
+        </p>
+        <div class="social-icons">
+          <a href="#">
+            <img src="../assets/images/icons/facebook.svg" alt="Facebook" / loading="lazy">
+          </a>
+          <a href="#">
+            <img src="../assets/images/icons/x.svg" alt="X" / loading="lazy">
+          </a>
+          <a href="#">
+            <img src="../assets/images/icons/instagram.svg" alt="Instagram" / loading="lazy">
+          </a>
+          <a href="#">
+            <img src="../assets/images/icons/linkedin.svg" alt="LinkedIn" / loading="lazy">
+          </a>
+        </div>
+        <div class="newsletter">
+          <input type="email" placeholder="email321@gmail.com" />
+          <button aria-label="Subscribe to newsletter">
+            <img src="../assets/images/icons/send.svg" alt="Send" / loading="lazy">
+          </button>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="link-column">
+          <div class="title-pill">Quick Links
+          </div>
+          <ul>
+            <li>Home
+            </li>
+            <li>About
+            </li>
+            <li>Services
+            </li>
+            <li>Pricing
+            </li>
+            <li>Contact
+            </li>
+          </ul>
+        </div>
+        <div class="link-column">
+          <div class="title-pill">Contact Information
+          </div>
+          <ul>
+            <li>
+              <a href="mailto:info@yourfriendlydevelopers.com">info@yourfriendlydevelopers.com
+              </a>
+            </li>
+            <li>
+              <a href="tel:234-248-9493">234-248-9493
+              </a>
+            </li>
+            <li>United States
+            </li>
+          </ul>
+        </div>
+        <div class="link-column">
+          <div class="title-pill">Policy Links
+          </div>
+          <ul>
+            <li>
+              <a href="legal/privacy-policy.html">Privacy Policy
+              </a>
+            </li>
+            <li>
+              <a href="legal/terms-and-conditions.html">Terms and Conditions
+              </a>
+            </li>
+            <li>
+              <a href="legal/cookie-settings.html">Cookie Settings
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2025 flextbsllc.com | All rights reserved.
+    </div>
+    <img src="../assets/images/WEBP/layer-2-3.webp" alt="YFD Watermark" class="footer-watermark" / loading="lazy">
+  </footer>
+  <script>document.addEventListener('DOMContentLoaded', function () { const hamburgerMenu = document.getElementById('hamburger-menu'); const mobileNav = document.getElementById('mobile-nav'); const header = document.querySelector('.custom-header'); hamburgerMenu.addEventListener('click', function () { hamburgerMenu.classList.toggle('active'); mobileNav.classList.toggle('active'); if (mobileNav.classList.contains('active')) { document.body.style.overflow = 'hidden' } else { document.body.style.overflow = 'auto' } }); const mobileLinks = mobileNav.querySelectorAll('a'); mobileLinks.forEach(link => { link.addEventListener('click', function () { hamburgerMenu.classList.remove('active'); mobileNav.classList.remove('active'); document.body.style.overflow = 'auto' }) }); window.addEventListener('scroll', function () { if (window.scrollY > 50) { header.classList.add('sticky') } else { header.classList.remove('sticky') } }); const mobileDropdowns = document.querySelectorAll('.mobile-nav .dropdown'); mobileDropdowns.forEach(dropdown => { const toggle = dropdown.querySelector('.dropdown-toggle'); toggle.addEventListener('click', function (e) { e.preventDefault(); dropdown.classList.toggle('active') }) }); document.addEventListener('click', function (e) { if (!e.target.closest('.dropdown')) { mobileDropdowns.forEach(dropdown => { dropdown.classList.remove('active') }) } }) });
+  </script>
+</body>
+
+</html>
