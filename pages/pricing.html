@@ -10,8 +10,24 @@
   </title>
   <link rel="icon" type="image/png" href="../assets/images/WEBP/layer 2 2 (1).webp">
   <link rel="shortcut icon" type="image/png" href="../assets/images/WEBP/layer 2 2 (1).webp">
-  <link rel="preload" href="../assets/fonts/BebasNeue-Regular.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="preload" href="../assets/fonts/Poppins-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <style>
+    /* Font loading optimization */
+    .desktop-nav .nav-links a,
+    .mobile-nav .nav-links a {
+      font-family: "Bebas Neue", Arial, sans-serif !important;
+      font-display: swap;
+    }
+
+    .desktop-nav .dropdown-menu a,
+    .mobile-nav .dropdown-menu a {
+      font-family: "Poppins", Arial, sans-serif !important;
+      font-display: swap;
+    }
+  </style>
   <link rel="stylesheet" href="../assets/css/main.min.css" />
   <script src="../assets/js/main.js" defer>
   </script>
@@ -139,13 +155,12 @@
     <div class="about-content">
       <h2>Pricing
       </h2>
-      <p>We are a team that builds websites, helps you show up on Google, and grows your brand through social media.
-        Everything we do is shaped around your goals.
+      <p>At Your Friendly Developers, we believe in providing premium services at fair prices.
       </p>
     </div>
   </section>
   <section class="pricing-section">
-    <div class="seo-container" style="margin-bottom: 4rem;">
+    <div class="seo-container" style="margin-bottom: 5rem;">
       <h2>
         <span class="blue-text">Premium Services
         </span>at Fair Prices
@@ -302,15 +317,25 @@
           <div class="title-pill">Quick Links
           </div>
           <ul>
-            <li>Home
+            <li>
+              <a href="../index.html">Home
+              </a>
             </li>
-            <li>About
+            <li>
+              <a href="about.html">About
+              </a>
             </li>
-            <li>Services
+            <li>
+              <a href="services/seo.html">Services
+              </a>
             </li>
-            <li>Pricing
+            <li>
+              <a href="pricing.html">Pricing
+              </a>
             </li>
-            <li>Contact
+            <li>
+              <a href="contact.html">Contact
+              </a>
             </li>
           </ul>
         </div>
@@ -342,10 +367,7 @@
               <a href="legal/terms-and-conditions.html">Terms and Conditions
               </a>
             </li>
-            <li>
-              <a href="legal/cookie-settings.html">Cookie Settings
-              </a>
-            </li>
+
           </ul>
         </div>
       </div>

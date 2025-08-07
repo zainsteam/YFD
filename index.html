@@ -9,11 +9,40 @@
   </title>
   <link rel="icon" type="image/png" href="assets/images/WEBP/layer 2 2 (1).webp">
   <link rel="shortcut icon" type="image/png" href="assets/images/WEBP/layer 2 2 (1).webp">
-  <link rel="preload" href="assets/fonts/BebasNeue-Regular.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="preload" href="assets/fonts/Poppins-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <style>
+    /* Font loading optimization */
+    .desktop-nav .nav-links a,
+    .mobile-nav .nav-links a {
+      font-family: "Bebas Neue", Arial, sans-serif !important;
+      font-display: swap;
+    }
+
+    .desktop-nav .dropdown-menu a,
+    .mobile-nav .desktop-nav .dropdown-menu a,
+    .mobile-nav .dropdown-menu a {
+      font-family: "Poppins", Arial, sans-serif !important;
+      font-display: swap;
+    }
+  </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="assets/css/main.min.css" />
   <script src="assets/js/main.js" defer>
+  </script>
+  <script>
+    // Force font loading
+    document.fonts.ready.then(function () {
+      console.log('Fonts loaded successfully');
+    });
+
+    // Preload fonts aggressively
+    const fontFamilies = ['Bebas Neue', 'Poppins'];
+    fontFamilies.forEach(font => {
+      document.fonts.load(`16px "${font}"`);
+    });
   </script>
   <script>document.addEventListener('DOMContentLoaded', function () { console.log('Inline script loaded!'); const hamburger = document.querySelector('.hamburger-menu'); if (hamburger) { console.log('Hamburger found in inline script'); hamburger.addEventListener('click', function () { console.log('Hamburger clicked from inline script!'); this.classList.toggle('active'); const mobileNav = document.querySelector('.mobile-nav'); if (mobileNav) { mobileNav.classList.toggle('active'); console.log('Mobile nav toggled:', mobileNav.classList.contains('active')) } }) } else { console.log('Hamburger not found in inline script') } const mobileDropdownToggles = document.querySelectorAll('.mobile-nav .dropdown-toggle'); console.log('Mobile dropdown toggles found in inline script:', mobileDropdownToggles.length); mobileDropdownToggles.forEach((toggle) => { console.log('Adding click event to dropdown toggle in inline script:', toggle); toggle.removeEventListener('click', toggle._dropdownHandler); toggle._dropdownHandler = function (e) { e.preventDefault(); e.stopPropagation(); e.stopImmediatePropagation(); console.log('Dropdown toggle clicked in inline script!'); const dropdown = this.closest('.dropdown'); const isActive = dropdown.classList.contains('active'); console.log('Dropdown active state in inline script:', isActive); if (!isActive) { dropdown.classList.add('active'); console.log('Dropdown activated in inline script!') } else { dropdown.classList.remove('active'); console.log('Dropdown deactivated in inline script!') } }; toggle.addEventListener('click', toggle._dropdownHandler) }); document.addEventListener('click', function (e) { if (!e.target.closest('.mobile-nav .dropdown') && !e.target.closest('.mobile-nav .dropdown-toggle')) { document.querySelectorAll('.mobile-nav .dropdown').forEach((d) => { d.classList.remove('active') }) } }); const mobileNavLinks = document.querySelectorAll('.mobile-nav .nav-links a:not(.dropdown-toggle)'); mobileNavLinks.forEach((link) => { link.addEventListener('click', function () { console.log('Mobile nav link clicked,closing menu'); if (hamburger && mobileNav) { hamburger.classList.remove('active'); mobileNav.classList.remove('active') } }) }); const dropdowns = document.querySelectorAll('.mobile-nav .dropdown'); dropdowns.forEach((dropdown) => { dropdown.addEventListener('click', function (e) { e.stopPropagation(); console.log('Dropdown clicked,preventing mobile nav close') }) }) });
   </script>
@@ -145,7 +174,9 @@
           </span>
         </h1>
         <p>At Your Friendly Developers, we understand that every business is different. Our goal is to help you grow
-          online by offering solutions that fit your needs and deliver real results.
+          online by offering solutions that fit your needs and deliver real results. Whether you need a custom website,
+          strong branding, or a complete digital marketing plan, our team is here to work with you and support your
+          brand’s success.
         </p>
         <div class="buttons">
           <a href="pages/about.html" class="btn secondary">Learn More
@@ -308,9 +339,9 @@
         <img src="assets/images/WEBP/frame.webp" alt="Why Choose Graphic" / loading="lazy">
       </div>
       <div class="why-choose-text">
-        <h2>Helping Businesses
+        <h2>Helping Businesses <br />
           <span class="blue">Grow with
-          </span>Purpose
+          </span>Purpose <br />
           <span class="blue">and Results
           </span>
         </h2>
@@ -616,10 +647,7 @@
               <a href="pages/legal/terms-and-conditions.html">Terms and Conditions
               </a>
             </li>
-            <li>
-              <a href="pages/legal/cookie-settings.html">Cookie Settings
-              </a>
-            </li>
+
           </ul>
         </div>
       </div>

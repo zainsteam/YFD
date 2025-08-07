@@ -10,8 +10,24 @@
   </title>
   <link rel="icon" type="image/png" href="../../assets/images/WEBP/layer 2 2 (1).webp">
   <link rel="shortcut icon" type="image/png" href="../../assets/images/WEBP/layer 2 2 (1).webp">
-  <link rel="preload" href="../../assets/fonts/BebasNeue-Regular.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="preload" href="../../assets/fonts/Poppins-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <style>
+    /* Font loading optimization */
+    .desktop-nav .nav-links a,
+    .mobile-nav .nav-links a {
+      font-family: "Bebas Neue", Arial, sans-serif !important;
+      font-display: swap;
+    }
+
+    .desktop-nav .dropdown-menu a,
+    .mobile-nav .dropdown-menu a {
+      font-family: "Poppins", Arial, sans-serif !important;
+      font-display: swap;
+    }
+  </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="../../assets/css/main.min.css" />
   <script src="../../assets/js/main.js" defer>
@@ -169,7 +185,7 @@
       <div class="seo-left">
         <h2>
           <span class="bold">The Power of
-          </span>
+          </span><br />
           <span class="bold blue ">Brandings
           </span>
         </h2>
@@ -287,26 +303,26 @@
         <div class="features-list">
           <div class="feature-item">
             <div class="feature-content">
-              <p>The faster your brand gets recognized, the quicker you start attracting more loyal customers. A strong
-                brand that stands out in the market ensures that customers stay longer, engage more, and convert higher.
-                With our branding strategies, we help your brand perform better and win more conversions.
+              <p>Effective branding helps your business attract the right audience, build lasting relationships, and
+                increase customer loyalty. A strong brand identity resonates with potential customers and helps set you
+                apart from the competition. The faster you establish a consistent and recognizable brand, the sooner
+                you’ll start seeing tangible results in engagement and conversions.
               </p>
             </div>
           </div>
         </div>
       </div>
       <div class="why-choose-text">
-        <h2>Speak Through Design
+        <h2>Speak Through
           <span class="blue">Design
           </span>
         </h2>
         <div class="features-list">
           <div class="feature-item">
             <div class="feature-content">
-              <p>My name is Ram, and I'm the founder of Your Friendly Developers, an agency that helps businesses grow
-                through website development, branding, and SEO. I wrote my first line of code at 15 and instantly fell
-                in love with creating things through technology. After completing my degree in computer science, I
-                launched this agency to build websites and digital solutions that are both effective and easy to use.
+              <p>A powerful brand communicates quickly and efficiently. With the right branding strategy in place, your
+                business will create an immediate impact and leave a lasting impression. Fast, effective branding drives
+                higher customer retention, boosts conversions, and gives you a competitive edge in your industry.
               </p>
             </div>
           </div>
@@ -380,15 +396,25 @@
           <div class="title-pill">Quick Links
           </div>
           <ul>
-            <li>Home
+            <li>
+              <a href="../../index.html">Home
+              </a>
             </li>
-            <li>About
+            <li>
+              <a href="../about.html">About
+              </a>
             </li>
-            <li>Services
+            <li>
+              <a href="branding.html">Services
+              </a>
             </li>
-            <li>Pricing
+            <li>
+              <a href="../pricing.html">Pricing
+              </a>
             </li>
-            <li>Contact
+            <li>
+              <a href="../contact.html">Contact
+              </a>
             </li>
           </ul>
         </div>
@@ -420,10 +446,7 @@
               <a href="../legal/terms-and-conditions.html">Terms and Conditions
               </a>
             </li>
-            <li>
-              <a href="../legal/cookie-settings.html">Cookie Settings
-              </a>
-            </li>
+
           </ul>
         </div>
       </div>

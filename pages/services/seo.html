@@ -10,8 +10,24 @@
   </title>
   <link rel="icon" type="image/png" href="../../assets/images/WEBP/layer 2 2 (1).webp">
   <link rel="shortcut icon" type="image/png" href="../../assets/images/WEBP/layer 2 2 (1).webp">
-  <link rel="preload" href="../../assets/fonts/BebasNeue-Regular.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="preload" href="../../assets/fonts/Poppins-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <style>
+    /* Font loading optimization */
+    .desktop-nav .nav-links a,
+    .mobile-nav .nav-links a {
+      font-family: "Bebas Neue", Arial, sans-serif !important;
+      font-display: swap;
+    }
+
+    .desktop-nav .dropdown-menu a,
+    .mobile-nav .dropdown-menu a {
+      font-family: "Poppins", Arial, sans-serif !important;
+      font-display: swap;
+    }
+  </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="../../assets/css/main.min.css" />
   <script src="../../assets/js/main.js" defer>
@@ -229,25 +245,25 @@
   <section class="why-choose">
     <div class="container why-choose-content">
       <div class="why-choose-text">
-        <h2>Your Vision,
-          <span class="blue">Our Expertise Together
-          </span>We Build
+        <h2>Why
+          <span class="blue">SEO
+          </span>Matters
         </h2>
         <div class="features-list">
           <div class="feature-item">
             <div class="feature-content">
-              <p>My name is Ram, and I’m the founder of Your Friendly Developers, an agency that helps businesses grow
-                through website development, branding, and SEO. I wrote my first line of code at 15 and instantly fell
-                in love with creating things through technology. After completing my degree in computer science, I
-                launched this agency to build websites and digital solutions that are both effective and easy to use.
+              <p>A website that isn’t optimized for search engines is like a shop without a sign—it won’t get noticed.
+                Research shows that businesses with a strong SEO strategy attract 75% more organic traffic. That’s
+                potential customers who will never find your website without SEO. 
               </p>
             </div>
           </div>
           <div class="feature-item">
             <div class="feature-content">
-              <p>We believe every business has a unique story, and we’re here to help share it. From building clean,
-                user-friendly websites to improving your online presence, we work closely with you to make sure your
-                brand stands out and reaches the right audience.
+              <p>With our custom SEO strategies, we ensure your site is optimized to perform at its best. We focus on
+                improving your search rankings, driving targeted traffic, and enhancing user experience across all
+                devices. SEO not only increases visibility but also boosts your website’s performance, conversion rates,
+                and long-term business growth.
               </p>
             </div>
           </div>
@@ -306,10 +322,9 @@
         <div class="features-list">
           <div class="feature-item">
             <div class="feature-content">
-              <p>My name is Ram, and I’m the founder of Your Friendly Developers, an agency that helps businesses grow
-                through website development, branding, and SEO. I wrote my first line of code at 15 and instantly fell
-                in love with creating things through technology. After completing my degree in computer science, I
-                launched this agency to build websites and digital solutions that are both effective and easy to use.
+              <p>Quick, efficient SEO ensures that your website stays ahead of competitors in search engine rankings.
+                Speed in SEO isn't just about ranking—it’s about gaining visibility quickly, building engagement, and
+                boosting your business success.
               </p>
             </div>
           </div>
@@ -383,15 +398,25 @@
           <div class="title-pill">Quick Links
           </div>
           <ul>
-            <li>Home
+            <li>
+              <a href="../../index.html">Home
+              </a>
             </li>
-            <li>About
+            <li>
+              <a href="../about.html">About
+              </a>
             </li>
-            <li>Services
+            <li>
+              <a href="seo.html">Services
+              </a>
             </li>
-            <li>Pricing
+            <li>
+              <a href="../pricing.html">Pricing
+              </a>
             </li>
-            <li>Contact
+            <li>
+              <a href="../contact.html">Contact
+              </a>
             </li>
           </ul>
         </div>
@@ -423,10 +448,7 @@
               <a href="../legal/terms-and-conditions.html">Terms and Conditions
               </a>
             </li>
-            <li>
-              <a href="../legal/cookie-settings.html">Cookie Settings
-              </a>
-            </li>
+
           </ul>
         </div>
       </div>

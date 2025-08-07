@@ -1,44 +1,28 @@
 /* Font Face Declarations */
+/* Google Fonts CDN is now used instead of local font files */
 @font-face {
-  font-family: "Poppins";
-  src: url("../assets/fonts/Poppins-Regular.ttf") format("truetype");
-  font-weight: 400;
+  font-family: "Impact Regular";
   font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Poppins";
-  src: url("../assets/fonts/Poppins-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Poppins";
-  src: url("../assets/fonts/Poppins-SemiBold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Poppins";
-  src: url("../assets/fonts/Poppins-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Bebas Neue";
-  src: url("../assets/fonts/BebasNeue-Regular.ttf") format("truetype");
   font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+  src: local("Impact Regular"),
+    url("../fonts/impact/impact.woff") format("woff");
 }
 
+@font-face {
+  font-family: "Impact Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Impact Regular"),
+    url("../fonts/impact/unicode.impact.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Impacted Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Impacted Regular"),
+    url("../fonts/impact/Impacted.woff") format("woff");
+}
 * {
   margin: 0;
   padding: 0;
@@ -60,8 +44,8 @@ html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* Force consistent rendering */
-  font-display: block;
+  /* Force immediate font application */
+  font-display: swap;
 }
 
 /* Single Animation for Review Slide */
@@ -100,11 +84,12 @@ html {
 
 /* Simple arrow hover effect */
 .arrow:hover {
-  background: #0096dc;
+  background: #0092ca;
 }
 
 body {
-  font-family: Impact, Arial, sans-serif;
+  font-family: "Impact Regular";
+  font-weight: normal;
   font-size: 16px;
   background: #fffee9;
   color: #222;
@@ -155,7 +140,7 @@ body {
 
 /* Sticky Button State */
 .custom-header.sticky .get-started-btn {
-  background: #0096dc;
+  background: #0092ca;
   color: white;
 }
 
@@ -405,7 +390,7 @@ body {
 }
 
 .desktop-nav .nav-links a.active {
-  color: #00c3ff;
+  color: #0092ca;
 }
 
 /* Removed hover effect for desktop nav links to prevent conflicts */
@@ -462,7 +447,7 @@ body {
 
 .desktop-nav .dropdown-menu a {
   display: block;
-  padding: 12px 20px;
+  padding: 5px 20px;
   color: white;
   text-decoration: none;
   font-size: 16px;
@@ -493,7 +478,7 @@ body {
 
 /* Special styling for non-index pages */
 body:not(.home-page) .get-started-btn {
-  background: #0096dc;
+  background: #0092ca;
   color: white;
 }
 
@@ -524,12 +509,13 @@ body:not(.home-page) .get-started-btn {
   font-size: 61px;
   line-height: 1.1;
   margin-bottom: 20px;
-  font-weight: 900;
-  font-family: Impact, Arial, sans-serif;
+  /* font-weight: 900; */
+  font-family: "Impact Regular";
+  font-weight: normal;
 }
 
 .text .blue {
-  color: #0096dc;
+  color: #0092ca;
 }
 
 .text p {
@@ -550,7 +536,7 @@ body:not(.home-page) .get-started-btn {
   padding: clamp(10px, 2.5vw, 12px) clamp(20px, 4vw, 24px);
   text-decoration: none;
   border-radius: 20px;
-  font-weight: bold;
+  font-weight: normal;
   white-space: nowrap;
   font-size: clamp(0.875rem, 2.5vw, 1rem);
   min-width: max-content;
@@ -562,12 +548,12 @@ body:not(.home-page) .get-started-btn {
 }
 
 .btn:focus {
-  outline: 2px solid #0096dc;
+  outline: 2px solid #0092ca;
   outline-offset: 2px;
 }
 
 .btn.primary {
-  background: #0096dc;
+  background: #0092ca;
   color: white;
 }
 
@@ -595,7 +581,7 @@ body:not(.home-page) .get-started-btn {
   right: -300px;
   width: clamp(500px, 75vw, 900px);
   height: clamp(500px, 75vw, 900px);
-  background: linear-gradient(135deg, #0078b3, #0096dc);
+  background: linear-gradient(135deg, #0078b3, #0092ca);
   border-radius: 50%;
   z-index: -999991;
 }
@@ -610,7 +596,7 @@ body:not(.home-page) .get-started-btn {
 
 .why-choose-content {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   gap: 60px;
 }
 
@@ -619,7 +605,8 @@ body:not(.home-page) .get-started-btn {
 }
 
 .why-choose-text h2 {
-  font-family: Impact, Arial, sans-serif;
+  font-family: "Impact Regular";
+  font-weight: normal;
   font-size: 49px;
   margin-bottom: 30px;
   line-height: 1.1;
@@ -627,7 +614,7 @@ body:not(.home-page) .get-started-btn {
 }
 
 .why-choose-text .blue {
-  color: #0096dc;
+  color: #0092ca;
 }
 
 .features-list {
@@ -672,7 +659,8 @@ body:not(.home-page) .get-started-btn {
 }
 
 .feature-content h3 {
-  font-family: Impact, Arial, sans-serif;
+  font-family: "Impact Regular";
+  font-weight: normal;
   font-size: 1.3rem;
   margin-bottom: 8px;
   color: #333;
@@ -715,7 +703,7 @@ body:not(.home-page) .get-started-btn {
   transform: translate(-50%, -50%);
   width: 280px;
   height: 200px;
-  background: linear-gradient(135deg, #0078b3, #0096dc);
+  background: linear-gradient(135deg, #0078b3, #0092ca);
   border-radius: 15px;
   padding: 20px;
   box-shadow: 0 10px 30px rgba(0, 150, 220, 0.3);
@@ -883,7 +871,8 @@ body:not(.home-page) .get-started-btn {
 }
 
 .expertise-header h2 {
-  font-family: Impact, Arial, sans-serif;
+  font-family: "Impact Regular";
+  font-weight: normal;
   font-size: 49px;
   margin-bottom: 20px;
   line-height: 1.1;
@@ -919,7 +908,7 @@ body:not(.home-page) .get-started-btn {
     #6f828e 85%,
     #7a838c 100%
   );
-  padding: 40px 30px;
+  padding: 40px 20px;
   border-radius: 20px;
   text-align: center;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -935,7 +924,7 @@ body:not(.home-page) .get-started-btn {
 .expertise-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-  background: linear-gradient(135deg, #0078b3, #0096dc);
+  background: linear-gradient(135deg, #0078b3, #0092ca);
 }
 
 .expertise-card:hover .btn,
@@ -959,12 +948,13 @@ body:not(.home-page) .get-started-btn {
 }
 
 .expertise-card.featured .btn {
-  background: #0096dc;
+  background: #0092ca;
   color: white;
 }
 
 .expertise-card h3 {
-  font-family: Impact, Arial, sans-serif;
+  font-family: "Impact Regular";
+  font-weight: normal;
   font-size: 25px;
   margin-bottom: 15px;
   color: white;
@@ -1088,7 +1078,7 @@ body:not(.home-page) .get-started-btn {
   height: 40px;
   border: none;
   border-radius: 50%;
-  background: #0096dc;
+  background: #0092ca;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -1102,7 +1092,7 @@ body:not(.home-page) .get-started-btn {
 }
 
 .newsletter button:focus {
-  outline: 2px solid #0096dc;
+  outline: 2px solid #0092ca;
   outline-offset: 2px;
 }
 
@@ -1116,6 +1106,7 @@ body:not(.home-page) .get-started-btn {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
+  z-index: 999;
 }
 
 .link-column {
@@ -1246,7 +1237,7 @@ body:not(.home-page) .get-started-btn {
 .cta-dot-about {
   width: 140px;
   height: 140px;
-  background-image: radial-gradient(#0094d9 30%, transparent 1%);
+  background-image: radial-gradient(#0092ca 30%, transparent 1%);
   background-size: 16px 16px;
   background-position: center;
   opacity: 1;
@@ -1284,7 +1275,8 @@ body:not(.home-page) .get-started-btn {
 }
 
 .cta-content h2 {
-  font-family: Impact, Arial, sans-serif;
+  font-family: "Impact Regular";
+  font-weight: normal;
   font-size: 49px;
   color: white;
   margin-bottom: 20px;
@@ -1409,7 +1401,7 @@ body:not(.home-page) .get-started-btn {
 /* pricing */
 .pricing-section {
   background: #fffee9;
-  padding: 80px 0 20px;
+  padding: 50px 20px 20px;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -1427,15 +1419,16 @@ body:not(.home-page) .get-started-btn {
 }
 
 .pricing-header h2 {
-  font-family: Impact, Arial, sans-serif;
+  font-family: "Impact Regular";
+  font-weight: normal;
   font-size: 49px;
-  font-weight: 900;
+  /* font-weight: 900; */
   margin-bottom: 10px;
   line-height: 1.1;
 }
 
 .pricing-header h2 span {
-  color: #0096dc;
+  color: #0092ca;
 }
 
 .pricing-header p {
@@ -1500,7 +1493,7 @@ body:not(.home-page) .get-started-btn {
   display: inline-block;
   padding: 5px 15px;
   font-size: clamp(0.8rem, 1.2vw, 0.9rem);
-  font-weight: bold;
+  font-weight: 500;
   border-radius: 20px;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -1562,7 +1555,7 @@ body:not(.home-page) .get-started-btn {
   font-size: 16px;
   text-decoration: none;
   transition: background 0.3s ease;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .get-started-btn:hover {
@@ -1581,15 +1574,16 @@ body:not(.home-page) .get-started-btn {
 
 .testimonial-header h2 {
   font-size: 49px;
-  font-weight: 900;
+  /* font-weight: 900; */
   margin-bottom: 60px;
   position: relative;
   z-index: 4;
-  font-family: Impact, Arial, sans-serif;
+  font-family: "Impact Regular";
+  font-weight: normal;
 }
 
 .testimonial-header h2 span {
-  color: #0096dc;
+  color: #0092ca;
   position: relative;
   z-index: 4;
 }
@@ -1657,7 +1651,7 @@ body:not(.home-page) .get-started-btn {
 
 .author img {
   border-radius: 50%;
-  border: 3px solid #0096dc;
+  border: 3px solid #0092ca;
   margin-right: 15px;
   width: 60px;
   height: 60px;
@@ -1713,13 +1707,13 @@ body:not(.home-page) .get-started-btn {
 }
 
 .arrow:hover {
-  background: #0096dc;
+  background: #0092ca;
   transform: scale(1.1);
   box-shadow: 0 4px 12px rgba(0, 150, 220, 0.3);
 }
 
 .arrow:focus {
-  outline: 2px solid #0096dc;
+  outline: 2px solid #0092ca;
   outline-offset: 2px;
 }
 
@@ -1744,10 +1738,11 @@ body:not(.home-page) .get-started-btn {
 
 .contact-box h2 {
   font-size: 49px;
-  font-weight: bold;
+  /* font-weight: bold; */
   margin-bottom: 15px;
   text-align: center;
-  font-family: Impact, Arial, sans-serif;
+  font-family: "Impact Regular";
+  font-weight: normal;
 }
 
 .contact-box p {
@@ -1774,7 +1769,7 @@ body:not(.home-page) .get-started-btn {
 }
 
 .icon {
-  background: #0096dc !important;
+  background: #0092ca !important;
   color: white !important;
   border-radius: 50% !important;
   width: clamp(40px, 8vw, 60px) !important;
@@ -1791,7 +1786,7 @@ body:not(.home-page) .get-started-btn {
 
 /* Larger Icon Class */
 .icon-large {
-  background: #0096dc !important;
+  background: #0092ca !important;
   color: white !important;
   border-radius: 50% !important;
   width: clamp(70px, 14vw, 90px) !important;
@@ -2463,7 +2458,7 @@ body:not(.home-page) .get-started-btn {
 
 @media (max-width: 768px) {
   .site-footer {
-    padding: 40px 0 20px;
+    padding: 50px 20px 20px;
   }
 
   .footer-container {
@@ -2559,7 +2554,8 @@ body:not(.home-page) .get-started-btn {
 }
 
 .expertise-card h3 {
-  font-family: Impact, Arial, sans-serif;
+  font-family: "Impact Regular";
+  font-weight: normal;
   font-size: 25px;
   margin-bottom: 15px;
   color: white;
@@ -2588,11 +2584,11 @@ body.about-page .about-section {
 }
 
 .about-content h2 {
-  font-family: Impact, Arial, sans-serif !important;
+  /* font-family: "Impact Regular" !important; */
   font-size: 61px;
-  font-weight: 900;
+  font-weight: normal;
   margin-bottom: 20px;
-  font-family: Impact, Arial, sans-serif;
+  font-family: "Impact Regular" !important;
 }
 
 .about-content p {
@@ -2649,9 +2645,10 @@ body.about-page .about-section {
 .section-title {
   text-align: center;
   font-size: 49px;
-  font-weight: 800;
+  /* font-weight: 800; */
   color: #1f1f1f;
-  font-family: Impact, Arial, sans-serif;
+  font-family: "Impact Regular";
+  font-weight: normal;
 }
 
 .section-title span {
@@ -2708,9 +2705,10 @@ body.about-page .about-section {
 }
 
 .need-item h3 {
-  font-family: Impact, Arial, sans-serif;
-  font-size: 1.3rem;
-  font-weight: 700;
+  font-family: "Impact Regular";
+  font-weight: normal;
+  font-size: 1.5rem;
+  /* font-weight: 700; */
   margin-bottom: 10px;
   color: #1f1f1f;
 }
@@ -2742,7 +2740,7 @@ body.about-page .about-section {
 }
 
 .grow-card {
-  background-color: #0094d9;
+  background-color: #0092ca;
   border-radius: 50px;
   padding: 40px 40px;
   max-width: 1000px;
@@ -2755,9 +2753,10 @@ body.about-page .about-section {
 }
 
 .grow-card h2 {
-  font-family: Impact, Arial, sans-serif;
+  font-family: "Impact Regular";
+  font-weight: normal;
   font-size: 49px;
-  font-weight: 800;
+  /* font-weight: 800; */
   color: white;
   margin-bottom: 20px;
   line-height: 1;
@@ -2784,7 +2783,7 @@ body.about-page .about-section {
   font-weight: 600;
   border-radius: 999px;
   background-color: white;
-  color: #0094d9;
+  color: #0092ca;
   text-decoration: none;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   transition: 0.3s ease;
@@ -3000,7 +2999,7 @@ body.about-page .about-section {
 
 .seo-section {
   background-color: #fefdeb;
-  padding: 50px 0 20px;
+  padding: 50px 20px 20px;
   text-align: center;
 }
 
@@ -3062,19 +3061,72 @@ body.contact-page .about-section {
 
 .seo-container {
   max-width: 900px;
-  margin: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.seo-container h2,
+.seo-container h3,
+.seo-container p,
+.seo-container ul,
+.seo-container .contact-info {
+  /* text-align: left; */
+}
+
+/* Legal Pages Styling */
+.legal-section {
+  padding: 80px 20px;
+  background: #fffdeb;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.legal-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.legal-container h2,
+.legal-container h3,
+.legal-container p,
+.legal-container ul,
+.legal-container .contact-info {
+  text-align: left;
+}
+
+.contact-info {
+  margin-top: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  border-left: 4px solid #0092ca;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+.contact-info a {
+  color: #0092ca;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
 }
 
 .seo-container h2 {
-  font-family: Impact, Arial, sans-serif !important;
+  font-family: "Impact Regular" !important;
   font-size: 49px;
-  font-weight: 800;
+  font-weight: normal;
   margin-bottom: 20px;
   line-height: 1.1;
 }
 
 .seo-container .blue-text {
-  color: #0094d9;
+  color: #0092ca;
 }
 
 .seo-container .black-text {
@@ -3142,10 +3194,10 @@ body.contact-page .about-section {
 
 .seo-left h2 {
   font-size: 49px;
-  font-weight: 800;
+  font-weight: normal;
   color: #1f1f1f;
   margin-bottom: 30px;
-  font-family: Impact, Arial, sans-serif !important;
+  font-family: "Impact Regular" !important;
   line-height: 1.2;
 }
 
@@ -3240,14 +3292,15 @@ body.contact-page .about-section {
 .cta-box h2 {
   margin-bottom: 25px;
   font-size: 49px;
-  font-weight: 800;
-  font-family: Impact, Arial, sans-serif;
+  /* font-weight: 800; */
+  font-family: "Impact Regular";
+  font-weight: normal;
 }
 
 /* .cta-btn {
   display: inline-block;
   background-color: #fff;
-  color: #0094d9;
+  color: #0092CA;
   font-weight: 600;
   padding: 12px 30px;
   border-radius: 25px;
@@ -3368,8 +3421,9 @@ body.contact-page .about-section {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  padding: 2rem;
+  /* padding: 2rem; */
   position: relative;
+  padding-bottom: 150px;
 }
 
 .card {
@@ -3431,9 +3485,10 @@ body.contact-page .about-section {
 }
 
 .price {
-  font-family: Impact, Arial, sans-serif;
+  font-family: "Impact Regular";
+  font-weight: normal;
   font-size: 61px;
-  font-weight: bold;
+  /* font-weight: bold; */
   margin-bottom: 1rem;
 }
 
@@ -3457,7 +3512,7 @@ body.contact-page .about-section {
 .features {
   font-family: "Poppins", sans-serif;
   font-size: 0.9rem;
-  line-height: 3;
+  line-height: 2.5;
   margin-bottom: 1.5rem;
   color: #f0f0f0;
 }
@@ -3471,7 +3526,7 @@ body.contact-page .about-section {
   color: #029ee4;
   padding: 0.6rem 1.5rem;
   border-radius: 30px;
-  font-weight: bold;
+  font-weight: normal;
   text-decoration: none;
   display: inline-block;
 }
@@ -3513,15 +3568,16 @@ body.contact-page .about-section {
 
 .contact-form-left h2 {
   font-size: 49px;
-  font-weight: 800;
+  /* font-weight: 800; */
   color: #333;
   margin-bottom: 20px;
   line-height: 1.2;
-  font-family: Impact, Arial, sans-serif;
+  font-family: "Impact Regular";
+  font-weight: normal;
 }
 
 .contact-form-left h2 .blue {
-  color: #0096dc;
+  color: #0092ca;
 }
 
 .contact-form-left p {
@@ -3601,7 +3657,7 @@ body.contact-page .about-section {
 }
 
 .submit-btn:focus {
-  outline: 2px solid #0096dc;
+  outline: 2px solid #0092ca;
   outline-offset: 2px;
 }
 
@@ -3631,6 +3687,7 @@ body.contact-page .about-section {
   justify-content: center;
   position: relative;
   box-shadow: 0 15px 35px rgba(0, 150, 220, 0.2);
+  padding: 60px;
 }
 
 .contact-graphic {
@@ -3706,5 +3763,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Impact, Arial, sans-serif;
+  font-family: "Impact Regular";
+  font-weight: normal;
 }
