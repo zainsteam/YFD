@@ -3,7 +3,7 @@
 @font-face {
   font-family: "Impact Regular";
   font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   src: local("Impact Regular"),
     url("../fonts/impact/impact.woff") format("woff");
 }
@@ -11,7 +11,7 @@
 @font-face {
   font-family: "Impact Regular";
   font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   src: local("Impact Regular"),
     url("../fonts/impact/unicode.impact.woff") format("woff");
 }
@@ -19,7 +19,7 @@
 @font-face {
   font-family: "Impacted Regular";
   font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   src: local("Impacted Regular"),
     url("../fonts/impact/Impacted.woff") format("woff");
 }
@@ -89,7 +89,7 @@ html {
 
 body {
   font-family: "Impact Regular";
-  font-weight: normal;
+  font-weight: 500;
   font-size: 16px;
   background: #fffee9;
   color: #222;
@@ -354,7 +354,7 @@ body {
   display: block;
   text-decoration: none;
   font-family: "Poppins", "Arial", sans-serif;
-  font-weight: normal;
+  font-weight: 500;
   transition: all 0.3s ease;
 }
 
@@ -451,7 +451,7 @@ body {
   color: white;
   text-decoration: none;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 500;
   font-family: "Poppins", "Arial", sans-serif;
   line-height: 1.4;
   transition: all 0.3s ease;
@@ -511,7 +511,7 @@ body:not(.home-page) .get-started-btn {
   margin-bottom: 20px;
   /* font-weight: 900; */
   font-family: "Impact Regular";
-  font-weight: normal;
+  font-weight: 500;
 }
 
 .text .blue {
@@ -536,7 +536,7 @@ body:not(.home-page) .get-started-btn {
   padding: clamp(10px, 2.5vw, 12px) clamp(20px, 4vw, 24px);
   text-decoration: none;
   border-radius: 20px;
-  font-weight: normal;
+  font-weight: 500;
   white-space: nowrap;
   font-size: clamp(0.875rem, 2.5vw, 1rem);
   min-width: max-content;
@@ -606,7 +606,7 @@ body:not(.home-page) .get-started-btn {
 
 .why-choose-text h2 {
   font-family: "Impact Regular";
-  font-weight: normal;
+  font-weight: 500;
   font-size: 49px;
   margin-bottom: 30px;
   line-height: 1.1;
@@ -660,7 +660,7 @@ body:not(.home-page) .get-started-btn {
 
 .feature-content h3 {
   font-family: "Impact Regular";
-  font-weight: normal;
+  font-weight: 500;
   font-size: 1.3rem;
   margin-bottom: 8px;
   color: #333;
@@ -853,7 +853,7 @@ body:not(.home-page) .get-started-btn {
 .rectangle-bg-left {
   position: absolute;
   bottom: 0%;
-  left: -200px;
+  left: -300px;
 
   z-index: 0;
 }
@@ -872,7 +872,7 @@ body:not(.home-page) .get-started-btn {
 
 .expertise-header h2 {
   font-family: "Impact Regular";
-  font-weight: normal;
+  font-weight: 500;
   font-size: 49px;
   margin-bottom: 20px;
   line-height: 1.1;
@@ -954,8 +954,8 @@ body:not(.home-page) .get-started-btn {
 
 .expertise-card h3 {
   font-family: "Impact Regular";
-  font-weight: normal;
-  font-size: 25px;
+  font-weight: 500;
+  font-size: 32px;
   margin-bottom: 15px;
   color: white;
 }
@@ -1276,7 +1276,7 @@ body:not(.home-page) .get-started-btn {
 
 .cta-content h2 {
   font-family: "Impact Regular";
-  font-weight: normal;
+  font-weight: 500;
   font-size: 49px;
   color: white;
   margin-bottom: 20px;
@@ -1420,7 +1420,7 @@ body:not(.home-page) .get-started-btn {
 
 .pricing-header h2 {
   font-family: "Impact Regular";
-  font-weight: normal;
+  font-weight: 500;
   font-size: 49px;
   /* font-weight: 900; */
   margin-bottom: 10px;
@@ -1579,7 +1579,7 @@ body:not(.home-page) .get-started-btn {
   position: relative;
   z-index: 4;
   font-family: "Impact Regular";
-  font-weight: normal;
+  font-weight: 500;
 }
 
 .testimonial-header h2 span {
@@ -1742,7 +1742,7 @@ body:not(.home-page) .get-started-btn {
   margin-bottom: 15px;
   text-align: center;
   font-family: "Impact Regular";
-  font-weight: normal;
+  font-weight: 500;
 }
 
 .contact-box p {
@@ -2555,8 +2555,8 @@ body:not(.home-page) .get-started-btn {
 
 .expertise-card h3 {
   font-family: "Impact Regular";
-  font-weight: normal;
-  font-size: 25px;
+  font-weight: 500;
+  font-size: 32px;
   margin-bottom: 15px;
   color: white;
 }
@@ -2586,7 +2586,7 @@ body.about-page .about-section {
 .about-content h2 {
   /* font-family: "Impact Regular" !important; */
   font-size: 61px;
-  font-weight: normal;
+  font-weight: 500;
   margin-bottom: 20px;
   font-family: "Impact Regular" !important;
 }
@@ -2648,7 +2648,7 @@ body.about-page .about-section {
   /* font-weight: 800; */
   color: #1f1f1f;
   font-family: "Impact Regular";
-  font-weight: normal;
+  font-weight: 500;
 }
 
 .section-title span {
@@ -2706,8 +2706,8 @@ body.about-page .about-section {
 
 .need-item h3 {
   font-family: "Impact Regular";
-  font-weight: normal;
-  font-size: 1.5rem;
+  font-weight: 500;
+  font-size: 30px;
   /* font-weight: 700; */
   margin-bottom: 10px;
   color: #1f1f1f;
@@ -2754,7 +2754,7 @@ body.about-page .about-section {
 
 .grow-card h2 {
   font-family: "Impact Regular";
-  font-weight: normal;
+  font-weight: 500;
   font-size: 49px;
   /* font-weight: 800; */
   color: white;
@@ -2997,8 +2997,13 @@ body.about-page .about-section {
   }
 }
 
+.desktop-nav .nav-links .dropdown-menu a.active {
+  color: black;
+}
+
 .seo-section {
   background-color: #fefdeb;
+  position: relative;
   padding: 50px 20px 20px;
   text-align: center;
 }
@@ -3090,10 +3095,11 @@ body.contact-page .about-section {
 
 .legal-container h2,
 .legal-container h3,
-.legal-container p,
-.legal-container ul,
+/* .legal-container p, */
+/* .legal-container ul, */
 .legal-container .contact-info {
   text-align: left;
+  font-size: 30px;
 }
 
 .contact-info {
@@ -3120,7 +3126,7 @@ body.contact-page .about-section {
 .seo-container h2 {
   font-family: "Impact Regular" !important;
   font-size: 49px;
-  font-weight: normal;
+  font-weight: 500;
   margin-bottom: 20px;
   line-height: 1.1;
 }
@@ -3194,7 +3200,7 @@ body.contact-page .about-section {
 
 .seo-left h2 {
   font-size: 49px;
-  font-weight: normal;
+  font-weight: 500;
   color: #1f1f1f;
   margin-bottom: 30px;
   font-family: "Impact Regular" !important;
@@ -3294,7 +3300,7 @@ body.contact-page .about-section {
   font-size: 49px;
   /* font-weight: 800; */
   font-family: "Impact Regular";
-  font-weight: normal;
+  font-weight: 500;
 }
 
 /* .cta-btn {
@@ -3486,7 +3492,7 @@ body.contact-page .about-section {
 
 .price {
   font-family: "Impact Regular";
-  font-weight: normal;
+  font-weight: 500;
   font-size: 61px;
   /* font-weight: bold; */
   margin-bottom: 1rem;
@@ -3526,7 +3532,7 @@ body.contact-page .about-section {
   color: #029ee4;
   padding: 0.6rem 1.5rem;
   border-radius: 30px;
-  font-weight: normal;
+  font-weight: 500;
   text-decoration: none;
   display: inline-block;
 }
@@ -3573,7 +3579,7 @@ body.contact-page .about-section {
   margin-bottom: 20px;
   line-height: 1.2;
   font-family: "Impact Regular";
-  font-weight: normal;
+  font-weight: 500;
 }
 
 .contact-form-left h2 .blue {
@@ -3764,5 +3770,5 @@ h4,
 h5,
 h6 {
   font-family: "Impact Regular";
-  font-weight: normal;
+  font-weight: 500;
 }
